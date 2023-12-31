@@ -1,0 +1,137 @@
+// HomePage.js
+import {React, useEffect} from 'react';
+import './homepage.css';
+// import './tailwind.css';
+import ContainerOutsideExample from '../components/navbar';
+import image1 from "../assets/homepage-1.png"
+import Typewriter from "typewriter-effect";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faChartPie, faChalkboard, faCloud, faMagnifyingGlass, faGears, faLaptopCode } from '@fortawesome/free-solid-svg-icons';
+import 'aos/dist/aos.css'; // Import the CSS file for AOS
+import AOS from 'aos';
+
+const HomePage = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
+  return (
+    <>
+      <div className="main-div">
+        <section id='section1' className='section1 '>
+
+              <div className="section1-main2-div">
+                    <ContainerOutsideExample/>    
+                <div className="section1-main3-div ">
+                    
+                    <div className=" img-div ">
+                      <img src={image1} className='it-home-pic' alt="IT pic"/>
+                    </div>
+              
+                    <div className="text-section1">
+                      <p className=' p-section1-part1'>CHANGE YOUR VIEW OF IT SOLUTIONS</p>
+                        <div className="typewriter">
+
+                            <Typewriter
+                              onInit={(typewriter) => {
+                                typewriter
+                                .typeString("Welcome...")
+                                      .pauseFor(1000)
+                                      .deleteAll()
+                                      .typeString("Unlocking Business Success with IT Solutions in Dubai")
+                                      .pauseFor(1000)
+                                      // .deleteAll()
+                                      .typeString("<br />At M.O.I.T.L.L.C")
+                                      .start();
+                                    }}
+                            />
+                       </div>
+
+                      {/* <div className="unlocking-text-div">
+                        <p className='unlocking-text'>Unlocking Business Success with IT Solutions in Dubai</p>
+                      </div>
+
+                      <p className='p-section1-part2'>Enhance your company’s efficiency and growth with top-notch IT solutions in Dubai.</p> */}
+
+                      
+                    </div>
+
+                </div>  
+              </div>  
+
+
+        </section>
+
+        <section id='section2' className='section2'>
+            <div className="section2-main-div">
+
+                    <div className="small-tittle-div">
+                      <ul>
+                        <li>
+                          <h6 className='small-title-p'>
+                            
+                            <span>
+                              BUILD YOUR SMALL BUSINESS WITH US
+                            </span> 
+                            
+                          </h6> 
+                        </li>
+                      </ul>
+
+                    </div>
+
+                <h2 className='it-solutions'>Why Choose M.O.I.T.L.L.C<br/>
+                        As your best IT Solution Partner</h2>
+
+
+                      <div className="card-div">
+                        <div className="card-div-row" data-aos="fade-right" data-aos-duration="1000">
+
+                          <div className="card">
+                              <FontAwesomeIcon className='section2-card-icon' icon={faChartPie} />
+                              <h3 className='card-headers'>Expertise</h3>
+                              <p className='card-paragraphs'>One size does not fit all in the world of IT solutions, and that's where TAQNIYAH excels</p>
+                          </div>
+                          <div className="card">
+                              <FontAwesomeIcon className='section2-card-icon' icon={faChalkboard} />
+                              <h3 className='card-headers'>Solution</h3>
+                              <p className='card-paragraphs'>One size does not fit all in the world of IT solutions, and that's where TAQNIYAH excels.</p>
+                          </div>
+                          <div className="card">
+                              <FontAwesomeIcon className='section2-card-icon' icon={faCloud} />
+                              <h3 className='card-headers'>Customer Approach</h3>
+                              <p className='card-paragraphs'>Choosing TAQNIYAH means choosing a partner that puts your vision at the forefront.</p>
+                          </div>
+                        </div>
+                        <div className="card-div-row" data-aos="fade-left" data-aos-duration="1000">
+                          <div className="card">
+                              <FontAwesomeIcon className='section2-card-icon' icon={faMagnifyingGlass} />
+                              <h3 className='card-headers'>Quality Assurance</h3>
+                              <p className='card-paragraphs'>Quality is non-negotiable when it comes to IT solutions, and we understand that better than anyone.</p>
+                          </div>
+                          <div className="card">
+                              <FontAwesomeIcon className='section2-card-icon' icon={faGears} />
+                              <h3 className='card-headers'>Innovation</h3>
+                              <p className='card-paragraphs'>We thrive on staying ahead of the curve by continuously updating our knowledge of the latest industry trends and technologies.</p>
+                          </div>
+                          <div className="card">
+                              <FontAwesomeIcon className='section2-card-icon' icon={faLaptopCode} />
+                              <h3 className='card-headers'>Timely Delivery</h3>
+                              <p className='card-paragraphs'>With us, you can confidently plan your business strategies, knowing that your IT solutions.</p>
+                          </div>
+                        </div>
+                      </div>
+
+
+
+
+
+
+                
+            </div>  
+        </section>
+     </div>
+    </>
+  );
+};
+
+export default HomePage;

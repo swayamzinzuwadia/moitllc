@@ -1,0 +1,48 @@
+.navbar-main {
+    flex-direction: row;
+    display: flex;
+    width: 100%;
+    align-self: center;
+    /* margin: 20px; */
+    background-color: transparent; /* Use RGBA with alpha channel for transparency */
+    justify-content: flex-start;
+    height: 5rem;
+    border-bottom: 2px solid #20BEC0;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    /* border: 1px solid white; */
+}
+
+.logo {
+    height: 5.5rem;
+    width: 7.5rem;
+    /* margin: 15px; */
+    padding: 10px;
+    align-self: center;
+}
+.rightInner-navbar {
+    /* border: 1px solid white; */
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    align-self: center;
+    justify-self: center;
+    display: flex;
+    height: fit-content;
+    width: max-content;
+
+}
+
+.navbar-links {
+    color: #20BEC0;
+    margin-left: 2rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar-links:hover {
+    color: white;
+    /* text-decoration: underline; */
+}
