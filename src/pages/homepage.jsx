@@ -4,6 +4,7 @@ import './homepage.css';
 // import './tailwind.css';
 import ContainerOutsideExample from '../components/navbar';
 import image1 from "../assets/homepage-1.png"
+import section2_image from "../assets/home-section3.png"
 import Typewriter from "typewriter-effect";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChartPie, faChalkboard, faCloud, faMagnifyingGlass, faGears, faLaptopCode } from '@fortawesome/free-solid-svg-icons';
@@ -61,7 +62,10 @@ const HomePage = () => {
 
         </section>
 
+      <div className="background2">
         <section id='section2' className='section2'>
+
+          
             <div className="section2-main-div">
 
                     <div className="small-tittle-div">
@@ -121,14 +125,64 @@ const HomePage = () => {
                         </div>
                       </div>
 
-
-
-
-
-
-                
             </div>  
         </section>
+     
+     
+        <section id='section2-2' className='section2-2'>
+            <div className="section2-2-main">
+
+            <div className="section2-2-submain">
+                  <div className="section2-2-content-div">
+                      
+                      <div className="section2-2-small-title-main-div">
+                        <div className="dot-1">
+                          <p className='dot-1-p'>.</p>
+                        </div>
+                        <div className="section2-2-small-title-div">
+                          <h6 className='section2-2-small-title'>
+                            our mission
+                          </h6>
+                        </div>
+                      </div>
+                      <div className="section2-2-title-div">
+                          <h3 className='section2-2-title'>Delivering Exceptional IT Solutions in Dubai and Beyond</h3>
+                      </div>
+                      <div className="section2-2-para-div">
+                          <p className='section2-2-para1'>At Taqniyah IT Solutions, we are your trusted partner in providing cutting-edge IT solutions tailored to meet the unique needs of businesses in Dubai and beyond.</p>
+                          <p className='section2-2-para2'>As a premier IT solution company, we specialize in a wide range of services, including web development, software creation, mobile app design, digital marketing, and more. Our dedicated team of experts is committed to delivering top-tier solutions that drive your business forward. Explore the world of technology with Taqniyah IT Solutions.</p>
+                      </div>
+                  </div>
+                      <div className="section2-2-image-div">
+                        <img src={section2_image} className='section2-2-image' alt="teaching" />
+                      </div>
+            </div>
+          </div>
+        </section>
+      </div>
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
      </div>
     </>
   );
