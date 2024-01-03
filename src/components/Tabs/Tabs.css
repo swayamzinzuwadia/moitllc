@@ -31,14 +31,17 @@
     display: flex;
     /* flex-direction: row; */
     justify-content: space-evenly;
+    flex-wrap: wrap;
+    min-width: 80%;
+    /* overflow-x: visible; */
 }
 
 .tabs-maindiv{
     display: flex;
     flex-direction: column;
     width: 100%;
-    /* align-items: center; */
-    /* justify-content: center; */
+    align-items: center;
+    /* justify-content: space-evenly; */
     /* background-image: url("../../assets/bg-shape2-home6.jpg");
     background-position: bottom;
     background-repeat: no-repeat; */
@@ -66,16 +69,56 @@
 .tab.active .onactive{
     display: block;
 }
+.activetabs{
+    max-width: 80%;
+}
 
+
+
+@media screen and (max-width:600px){
+    .tabs-subdiv{
+        overflow-x: hidden;
+        -webkit-overflow-scrolling: touch;
+        white-space: nowrap;
+        scroll-behavior: smooth;
+        scrollbar-width: thin;
+    }
+    .tabs-subdiv::-webkit-scrollbar {
+        display: none; /* Hide scrollbar in WebKit browsers */
+    }
+    .tab{
+        display: flex;
+        flex-direction: column;  
+        border: 0.2px solid #0EC6FF;  
+        height: 10  rem;
+        width: 12rem;
+        align-items: center;
+        justify-content: space-evenly;
+        color: white;
+        font-weight: 800;
+        font-size: 14.5px;
+        border-radius: 5%;
+    }
+    
+}
+
+.section3-bgoverlay{
+    display: flex;
+    justify-content: center;
+    background-image: url("../../assets/bg-shape3-home6.png");
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
 
 /* Tab 1 */
-.tab1-submain{
+/* .tab1-submain{
     display: flex;
     flex-direction: row;
     /* justify-content: center; */
-    /* align-items: center; */
+    /* align-items: center; 
     margin-top: 5rem;
-    max-width: 85%;
+    max-width: 75%;
 }
 .tab1-main{
     display: flex;
@@ -122,16 +165,8 @@
     width: 100%;
     height: 100%;
 }
-.section3-bgoverlay{
-    display: flex;
-    justify-content: center;
-    background-image: url("../../assets/bg-shape3-home6.png");
-    background-position: bottom right;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
 
-/* TAB 1 MOBILE */ 
+/* TAB 1 MOBILE 
 
 @media screen and (max-width: 600px){
     .tab1-submain{
@@ -173,12 +208,10 @@
     .tab1-image-div{
         margin-top: 2rem;
     }
-}
+} */
+
 
 /* TAB 2 */
-
-
-
 
 .tab2-paragraph-div{
     width: 90%;
@@ -231,13 +264,14 @@
 /* TAB2 Mobile */
 @media screen and (max-width:600px){
     .tab2-paragraph-div{
-        width: 50%;
+        width: 100%;
     }
     .tab2-img-div{
+        margin-top: 2rem;
         width: 100%;
     }
     .tab2-img{
-        width: 80%;
+        width: 100%;
     }
     .tab2-para{
         text-align: left;
@@ -246,10 +280,10 @@
     }
     .tab2-submain{
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         align-self: center;
         justify-content: center;
-        width: 90%;
+        width: 80%;
     }
     .tab2-main{
         width: 100%;
@@ -259,15 +293,26 @@
         margin-top: 5rem;
     }
     .tab2-content-div{
-        min-width: 50%;
+        min-width: 100%;
     }
 
+    .tab2-title-div{
+        min-width: 100%;
+    }
+
+    .tab2-title{
+        font-family: 'Raleway',sans-serif;
+        font-weight: 800;
+        color: white;
+        font-size: 23px;
+        text-align: left;
+        line-height: 20px;
+    }
+
+}   
 
 
-}
-
-
-/* TAB3 */
+/* TAB3
 .tab3-paragraph-div{
     width: 65%;
 }
@@ -306,29 +351,31 @@
     display: flex;
     flex-direction: column;
 }
-.tab2-title{
+.tab3-title{
     font-family: 'Raleway';
     font-weight: 800;
     color: white;
-    font-size: 2.5rem;
+    font-size: 2rem;
     text-align: left;
-    line-height: 40px;
+    line-height: 30px;
 }
 
-.tab2-title-div{
-    max-width: 50%;
+.tab3-title-div{
+    max-width: 80%;
 }
 
-/* TAB3 Mobile */
+
+/* TAB3 Mobile 
 @media screen and (max-width:600px){
     .tab3-paragraph-div{
         width: 100%;
     }
     .tab3-img-div{
         width: 100%;
+        margin-top: 2rem;
     }
     .tab3-img{
-        width: 80%;
+        width: 100%;
     }
     .tab3-para{
         text-align: left;
@@ -337,7 +384,7 @@
     }
     .tab3-submain{
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         align-self: center;
         justify-content: center;
         width: 90%;
@@ -350,9 +397,9 @@
         margin-top: 5rem;
     }
     .tab3-content-div{
-        min-width: 50%;
+        min-width: 90%;
     }
-    .tab2-title{
+    .tab3-title{
         font-family: 'Raleway';
         font-weight: 800;
         color: white;
@@ -361,11 +408,11 @@
         line-height: 20px;
     }
     
-    .tab2-title-div{
-        max-width: 70%;
+    .tab3-title-div{
+        max-width: 100%;
     }
-    
 
 
 
-}
+
+} */

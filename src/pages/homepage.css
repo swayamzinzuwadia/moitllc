@@ -15,7 +15,7 @@
   display: flex;
   flex-direction: column;
   /* overflow: hidden; */
-  height: 2000vh;
+  height: auto;
 }
 .section1-main2-div{
   display: flex;
@@ -55,7 +55,7 @@
 }
 .img-div{
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
   max-width: 55%;
   margin-top: 15vh;
 }
@@ -370,12 +370,15 @@ li::before{
   color: white;
   font-weight: 800;
   font-size: 2rem;
+  line-height: 30px;
 }
 
 .section2-2-para1{
+  font-family: 'Raleway',sans-serif;
   font-size: 1.3rem;
   color: white;
   text-align: start;
+  line-height: 35px;
 }
 .section2-2-para2{
   font-size: 1rem;
@@ -512,12 +515,14 @@ li::before{
     justify-content: flex-start;
     flex-direction: column;
     text-align: center;
+    margin-top: 2rem;
   }
   .progress1{
     display: flex;
     align-items: center;
     justify-content: flex-end;
     flex-direction: column;
+    margin-top: 2rem;
   }
   .progress-subheaders{
     text-align: center;
@@ -528,7 +533,7 @@ li::before{
   }
   
   .progressbar2{
-    margin-top: 0rem;
+    margin-top: 2rem;
   }
 
 
@@ -543,7 +548,7 @@ li::before{
   background-image: url(../assets/bg-shape2-home6.jpg);
   background-position: top;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: 200%;
   /* margin-top: 20vh; */
   width: 100%;
   display: flex;
@@ -563,7 +568,9 @@ li::before{
   display: flex;
   justify-content: center;
   margin-top: 20vh;
+  /* padding-bottom: 20vh; */
 }
+
 
 
 /* 
@@ -573,10 +580,144 @@ li::before{
 
 .section3-headers{
   max-width: 57vh;
-  margin-left: 2rem;
+  margin-left: 6rem;
   /* margin-top: 2rem; */
 }
 
 .tabs{
   margin-top: 2.5rem;
+}
+
+
+
+
+@media screen and(max-width:600px) {
+  .section3{
+    background-image: url(../assets/bg-shape2-home6.jpg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: contain;
+    /* margin-top: 20vh; */
+    width: 100%;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    align-items: center;
+    background-color: #1459ba;
+    overflow-x: hidden;
+  }
+  
+  .section3-main{
+    background-image: url("../assets/bg2-dots-home6.png");
+    background-repeat: no-repeat;
+    /* background-position:top left; */
+    background-color: transparent;
+    height: auto;  
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 5vh;
+  }
+  
+  .section3-submain{
+    width: 100%;
+    overflow-x: hidden;
+  }
+  .tabs{
+    margin-top: 2.5rem;
+  }
+  
+  
+}
+
+
+
+.section4-main{
+  width: 100%;
+  background-color: #0049b1; 
+  display: flex;  
+  /* margin-top: 10vh; */
+  /* height: 50rem; */
+  /* border: 2px solid red; */
+}
+
+.section4-bgoverlay{
+  background-image: url(../assets/bg-shape4-home6.png);
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+}
+
+.section4-submain{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 80%;
+}
+
+.section4-image-div{
+  max-width: 50%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.section4-content-div{
+  max-width: 45%;
+}
+
+.section4-para{
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  text-align: left;
+  color: white;
+  font-weight: 300;
+}
+
+
+@media screen and (max-width: 600px){
+  .section4-submain{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 80%;
+
+  }
+  .section4-image-div{
+    max-width: 90%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  
+  .section4-content-div{
+    max-width: 90%;
+  }
+  .section4-para{
+    margin-top: 1rem;
+    font-size: 15px;
+    text-align: left;
+    color: white;
+    font-weight: 300;
+  }
+}
+
+.footer{
+  min-width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #0049B1;
+  flex-wrap: wrap;
+}
+.footer-text{
+  /* padding: 1rem; */
+  color: white;
 }

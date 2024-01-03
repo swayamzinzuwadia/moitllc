@@ -6,9 +6,9 @@ function ContainerOutsideExample() {
   return (
     <div className='navbar-main'>
       <div className="image-div">
-        <img src={logo} alt="growthHub-logo" className='logo' />
+        <img src={logo} alt="moit" className='logo' />
       </div>
-      <div className="nav-content">
+      {/* <div className="nav-content">
         <div className='rightInner-navbar'>
           <a href='#courses-container' className='navbar-links'>About Us</a>
           <a href='#testimonials' className='navbar-links'>Portfolio</a>
@@ -17,7 +17,7 @@ function ContainerOutsideExample() {
       </div>
       <div className="nav-icon-bars">
 
-      </div>
+      </div> */}
     </div>
   );
 }
