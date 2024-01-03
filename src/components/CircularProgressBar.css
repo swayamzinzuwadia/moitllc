@@ -1,0 +1,24 @@
+/* @media screen and (max-width: 600px){
+
+  .circular-progress-bar-individual-div{
+    margin-top: 2rem;
+  }
+} */
+
+.CircularProgressbar-text{
+  border: 10px solid #003F99;
+}
+@keyframes fillAnimation {
+  to {
+    clip: rect(0, 150px, 150px, 0);
+  }
+}
+
+.circular-progress-bar-wrapper {
+  position: relative;
+}
+
+.circular-progress-bar-overlay {
+  background-color: #0EC6FF;
+  border-radius: 50%;
+}

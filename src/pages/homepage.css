@@ -1,22 +1,27 @@
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant&family=Playfair+Display&family=Raleway&display=swap');
+
+
+
 
 
 /* SECTION 1 */
 .main-div{
   /* background-image: url('../assets/bg-shape3-home6.png'); */
   /* background-position: center; */
-  background-color: #1459BA;
+  background-color: #0049b1;
   display: flex;
   flex-direction: column;
+  /* overflow: hidden; */
+  height: 2000vh;
 }
 .section1-main2-div{
   display: flex;
   flex-direction: column;
   /* justify-content: space-evenly; */
-  height: 100vh;
+  height: 110vh;
   background-image: url('../assets/bg-banner-home6.png');
   background-repeat: no-repeat;
   background-size: cover;
@@ -44,10 +49,13 @@
   /* justify-content: center; */
 }
 .it-home-pic{
-  width: 100%;
+  width: 75%;
   height: auto;
+  margin-right: 2rem;
 }
 .img-div{
+  display: flex;
+  justify-content: end;
   max-width: 55%;
   margin-top: 15vh;
 }
@@ -110,8 +118,12 @@
     color: white;
     /* font-family: 'PlayFair Display', sans-serif; */
     font-weight: 800;
-    font-size: 30px;
+    font-size: 22px;
     text-align: center;
+  }
+  .it-home-pic{
+    width: 100%;
+    height: auto;
   }
   .img-div{
     max-width: 100%;
@@ -127,11 +139,7 @@
     align-items: center;
     /* justify-content: center; */
   }
-  .main-div{
-    overflow: hidden;
-    height: 500vh;
-    background-repeat: no-repeat;
-  }
+  
   .section1-main2-div{
     display: flex;
     flex-direction: column;
@@ -197,9 +205,10 @@ li::before{
 } */
 
 .it-solutions{
+  font-family:  'Raleway',sans-serif;
   color: white;
   font-size: 50px;
-  font-weight: 800;
+  font-weight: bold;
 }
 
 .card-div{
@@ -261,7 +270,7 @@ li::before{
     width: 100%;
   }
   .it-solutions{
-    font-size: 30px;
+    font-size: 22px;
   }
   .card-div{
     display: flex;
@@ -275,9 +284,10 @@ li::before{
     flex-direction: column;
     align-items: center;
     width: 100%;
-    height: 30vh;
+    height: 40vh;
     justify-content: space-evenly;
     border-radius: 1rem;
+    margin-top: 2rem;
   }
   .small-tittle-div{
     margin-top: 20vh;
@@ -302,15 +312,17 @@ li::before{
   flex-direction: row;
   align-items: flex-start;
   margin-top: 5rem;
-  width: 90%;
+  width: 100%;
   justify-content: center;
 }
 
 .section2-2-content-div{
-  max-width: 30%;
+  max-width: 32%;
+  line-height: 1.5rem;
 }
 .section2-2-image-div{
-  width: 50%;
+  width: 30%;
+  margin-left: 2.5rem;
 }
 
 
@@ -353,6 +365,7 @@ li::before{
   justify-content: flex-start;
 }
 .section2-2-title{
+  font-family: 'Raleway',sans-serif;
   text-align: start;
   color: white;
   font-weight: 800;
@@ -376,7 +389,194 @@ li::before{
   justify-content: space-evenly;
   height: 18rem;
 }
-.section2-2-image{
-  width: 40rem;
-  height: 40rem;
+/* .section2-2-image{
+  width: 50rem;
+  height: 50rem;
+} */
+
+.section2-2-submain2{
+  width: 70%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  height: 35vh;
+  margin-top: 1rem;
+  /* flex-wrap: wrap; */
+}
+
+.progress{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  text-align: center;
+}
+.progress1{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-direction: column;
+}
+.progress-subheaders{
+  text-align: center;
+  font-size: 1.4rem;
+  color: white;
+  font-weight: 500;
+
+}
+
+.progressbar2{
+  margin-top: 17rem;
+}
+
+.outer-path{
+  border-radius: 100%;
+  border: 15px solid #003F99;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+/* SECTION2-2 mobile */
+
+@media screen and (max-width: 600px) {
+  .section2-2-submain{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+  }
+  
+  .section2-2-content-div{
+    max-width: 90%;
+  }
+  .section2-2-image-div{
+    width: 90%;
+    margin-left: 0;
+    margin-top: 2rem;
+  }   
+  .section2-2-small-title-main-div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .section2-2-title-div{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .section2-2-title{
+    text-align: left;
+    color: white;
+    font-weight: 800;
+    font-size: 22px;
+  }
+
+  .section2-2-para1{
+    font-size: 1rem;
+    color: white;
+    text-align: left;
+  }
+  .section2-2-para2{
+    font-size: 0.75rem;
+    color: white;
+    text-align: left;
+  }
+  
+  .section2-2-image{
+    width: 20rem;
+    height: 20rem;
+  }
+
+  .section2-2-image-div{
+    display: flex;
+    justify-content: center;
+  }
+
+  .section2-2-submain2{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: auto;
+    margin-top: 1rem;
+  }
+  
+  .progress{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    text-align: center;
+  }
+  .progress1{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: column;
+  }
+  .progress-subheaders{
+    text-align: center;
+    font-size: 1.4rem;
+    color: white;
+    font-weight: 500;
+  
+  }
+  
+  .progressbar2{
+    margin-top: 0rem;
+  }
+
+
+
+
+}
+
+
+/* SECTION 3 */
+
+.section3{
+  background-image: url(../assets/bg-shape2-home6.jpg);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: contain;
+  /* margin-top: 20vh; */
+  width: 100%;
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  align-items: center;
+  background-color: #1459ba;
+}
+
+.section3-main{
+  background-image: url("../assets/bg2-dots-home6.png");
+  background-repeat: no-repeat;
+  /* background-position:top left; */
+  background-color: transparent;
+  height: auto;  
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 20vh;
+}
+
+
+/* 
+.section3-submain{
+  width: 90%;
+} */
+
+.section3-headers{
+  max-width: 57vh;
+  margin-left: 2rem;
+  /* margin-top: 2rem; */
+}
+
+.tabs{
+  margin-top: 2.5rem;
 }

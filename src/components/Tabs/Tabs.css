@@ -1,0 +1,371 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:wght@400;700&family=Playfair+Display:wght@400;800&family=Raleway:wght@400;800&display=swap');
+.tab{
+    display: flex;
+    flex-direction: column;  
+    border: 0.2px solid #0EC6FF;  
+    height: 9.5rem;
+    width: 9rem;
+    align-items: center;
+    justify-content: space-evenly;
+    color: white;
+    font-weight: 800;
+    font-size: 16px;
+    border-radius: 5%;
+}
+
+.tab:hover{
+    background-color: orangered;
+}
+.tab-superwrap{
+    max-width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tab-icon{
+    font-size: 40px;
+}
+
+.tabs-subdiv{
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: space-evenly;
+}
+
+.tabs-maindiv{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    /* align-items: center; */
+    /* justify-content: center; */
+    /* background-image: url("../../assets/bg-shape2-home6.jpg");
+    background-position: bottom;
+    background-repeat: no-repeat; */
+}
+.tab-headers{
+    max-width: 80%;
+    font-family: 'Raleway', sans-serif;
+}
+.onactive{
+    color: orangered;
+    background-color: orangered;
+    margin-top: 9rem;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    display: none;
+    transform: rotate(45deg);
+    border-radius: 15%;
+}
+
+.tab.active{
+    background-color: orangered;
+}
+
+.tab.active .onactive{
+    display: block;
+}
+
+
+/* Tab 1 */
+.tab1-submain{
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center; */
+    /* align-items: center; */
+    margin-top: 5rem;
+    max-width: 85%;
+}
+.tab1-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.tab1-content-div{
+    max-width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.tab1-title-div{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 95%;
+}
+.tab1-paragraph-div{
+    width: 80%;
+    margin-top: 1rem;
+}
+.tab1-para{
+    text-align: left;
+    color: #C5DDFF;
+    
+}
+
+
+.tab1-title{
+    font-family: 'Raleway';
+    font-weight: 800;
+    color: white;
+    font-size: 2.5rem;
+    text-align: left;
+    line-height: 40px;
+}
+
+.tab1-image-div{
+    width: 100%;
+    height: 100%;
+}
+.section3-bgoverlay{
+    display: flex;
+    justify-content: center;
+    background-image: url("../../assets/bg-shape3-home6.png");
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+/* TAB 1 MOBILE */ 
+
+@media screen and (max-width: 600px){
+    .tab1-submain{
+        display: flex;
+        flex-direction: column;
+        max-width: 90%;
+    }
+    
+    .tab1-content-div{
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .tab1-title-div{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        width: 95%;
+    }
+    .tab1-paragraph-div{
+        width: 95%;
+        margin-top: 1rem;
+    }
+    .tab1-para{
+        text-align: left;
+        font-size: 16.5px;
+        line-height: 32px;
+    }
+    
+    
+    .tab1-title{
+        font-size: 22px;
+        text-align: left;
+    }
+    
+    .tab1-image-div{
+        margin-top: 2rem;
+    }
+}
+
+/* TAB 2 */
+
+
+
+
+.tab2-paragraph-div{
+    width: 90%;
+}
+.tab2-img-div{
+    min-width: 40%;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+}
+.tab2-img{
+    width: 800rem;
+}
+.tab2-para{
+    text-align: left;
+    color: #C5DDFF;
+    margin-top: 1rem;
+}
+.tab2-submain{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+}
+.tab2-main{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+}
+.tab2-content-div{
+    min-width: 50%;
+}
+.tab2-title{
+    font-family: 'Raleway';
+    font-weight: 800;
+    color: white;
+    font-size: 2.5rem;
+    text-align: left;
+    line-height: 40px;
+}
+
+.tab2-title-div{
+    max-width: 70%;
+}
+
+/* TAB2 Mobile */
+@media screen and (max-width:600px){
+    .tab2-paragraph-div{
+        width: 50%;
+    }
+    .tab2-img-div{
+        width: 100%;
+    }
+    .tab2-img{
+        width: 80%;
+    }
+    .tab2-para{
+        text-align: left;
+        color: #C5DDFF;
+        margin-top: 1rem;
+    }
+    .tab2-submain{
+        display: flex;
+        flex-direction: row;
+        align-self: center;
+        justify-content: center;
+        width: 90%;
+    }
+    .tab2-main{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 5rem;
+    }
+    .tab2-content-div{
+        min-width: 50%;
+    }
+
+
+
+}
+
+
+/* TAB3 */
+.tab3-paragraph-div{
+    width: 65%;
+}
+.tab3-img-div{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+}
+.tab3-img{
+    width: 100%;
+    height: auto;
+}
+.tab3-para{
+    text-align: left;
+    color: #C5DDFF;
+    margin-top: 1rem;
+}
+.tab3-submain{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+}
+.tab3-main{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+}
+.tab3-content-div{
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.tab2-title{
+    font-family: 'Raleway';
+    font-weight: 800;
+    color: white;
+    font-size: 2.5rem;
+    text-align: left;
+    line-height: 40px;
+}
+
+.tab2-title-div{
+    max-width: 50%;
+}
+
+/* TAB3 Mobile */
+@media screen and (max-width:600px){
+    .tab3-paragraph-div{
+        width: 100%;
+    }
+    .tab3-img-div{
+        width: 100%;
+    }
+    .tab3-img{
+        width: 80%;
+    }
+    .tab3-para{
+        text-align: left;
+        color: #C5DDFF;
+        margin-top: 1rem;
+    }
+    .tab3-submain{
+        display: flex;
+        flex-direction: row;
+        align-self: center;
+        justify-content: center;
+        width: 90%;
+    }
+    .tab3-main{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 5rem;
+    }
+    .tab3-content-div{
+        min-width: 50%;
+    }
+    .tab2-title{
+        font-family: 'Raleway';
+        font-weight: 800;
+        color: white;
+        font-size: 22px;
+        text-align: left;
+        line-height: 20px;
+    }
+    
+    .tab2-title-div{
+        max-width: 70%;
+    }
+    
+
+
+
+}

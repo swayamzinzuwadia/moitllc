@@ -5,13 +5,20 @@ import "./navbar.css"
 function ContainerOutsideExample() {
   return (
     <div className='navbar-main'>
-    <img src={logo} alt="growthHub-logo" className='logo' />
-    <div className='rightInner-navbar'>
-      <a href='#courses-container' className='navbar-links'>Courses</a>
-      <a href='#testimonials' className='navbar-links'>Testimonials</a>
-      <a href='#footer' className='navbar-links'>Contact</a>
+      <div className="image-div">
+        <img src={logo} alt="growthHub-logo" className='logo' />
+      </div>
+      <div className="nav-content">
+        <div className='rightInner-navbar'>
+          <a href='#courses-container' className='navbar-links'>About Us</a>
+          <a href='#testimonials' className='navbar-links'>Portfolio</a>
+          <a href='#footer' className='navbar-links'>Contact Us</a>
+        </div>
+      </div>
+      <div className="nav-icon-bars">
+
+      </div>
     </div>
-  </div>
   );
 }
 

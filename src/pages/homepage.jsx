@@ -10,11 +10,18 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChartPie, faChalkboard, faCloud, faMagnifyingGlass, faGears, faLaptopCode } from '@fortawesome/free-solid-svg-icons';
 import 'aos/dist/aos.css'; // Import the CSS file for AOS
 import AOS from 'aos';
+import CircularProgressBar from '../components/circular-progress-bar';
+import Tabs from '../components/Tabs/Tabs';
+
 
 const HomePage = () => {
   useEffect(() => {
     AOS.init();
   }, []);
+  const progress = 87;
+  const progress1 = 86;
+  const progress2 = 94;
+  const progress3 = 91;
   return (
     <>
       <div className="main-div">
@@ -93,17 +100,17 @@ const HomePage = () => {
                           <div className="card">
                               <FontAwesomeIcon className='section2-card-icon' icon={faChartPie} />
                               <h3 className='card-headers'>Expertise</h3>
-                              <p className='card-paragraphs'>One size does not fit all in the world of IT solutions, and that's where TAQNIYAH excels</p>
+                              <p className='card-paragraphs'>One size does not fit all in the world of IT solutions, and that's where Moit excels</p>
                           </div>
                           <div className="card">
                               <FontAwesomeIcon className='section2-card-icon' icon={faChalkboard} />
                               <h3 className='card-headers'>Solution</h3>
-                              <p className='card-paragraphs'>One size does not fit all in the world of IT solutions, and that's where TAQNIYAH excels.</p>
+                              <p className='card-paragraphs'>One size does not fit all in the world of IT solutions, and that's where Moit excels.</p>
                           </div>
                           <div className="card">
                               <FontAwesomeIcon className='section2-card-icon' icon={faCloud} />
                               <h3 className='card-headers'>Customer Approach</h3>
-                              <p className='card-paragraphs'>Choosing TAQNIYAH means choosing a partner that puts your vision at the forefront.</p>
+                              <p className='card-paragraphs'>Choosing MOIT means choosing a partner that puts your vision at the forefront.</p>
                           </div>
                         </div>
                         <div className="card-div-row" data-aos="fade-left" data-aos-duration="1000">
@@ -149,16 +156,90 @@ const HomePage = () => {
                           <h3 className='section2-2-title'>Delivering Exceptional IT Solutions in Dubai and Beyond</h3>
                       </div>
                       <div className="section2-2-para-div">
-                          <p className='section2-2-para1'>At Taqniyah IT Solutions, we are your trusted partner in providing cutting-edge IT solutions tailored to meet the unique needs of businesses in Dubai and beyond.</p>
-                          <p className='section2-2-para2'>As a premier IT solution company, we specialize in a wide range of services, including web development, software creation, mobile app design, digital marketing, and more. Our dedicated team of experts is committed to delivering top-tier solutions that drive your business forward. Explore the world of technology with Taqniyah IT Solutions.</p>
+                          <p className='section2-2-para1'>At Moit IT Solutions, we are your trusted partner in providing cutting-edge IT solutions tailored to meet the unique needs of businesses in Dubai and beyond.</p>
+                          <p className='section2-2-para2'>As a premier IT solution company, we specialize in a wide range of services, including web development, software creation, mobile app design, digital marketing, and more. Our dedicated team of experts is committed to delivering top-tier solutions that drive your business forward. Explore the world of technology with Moit IT Solutions.</p>
                       </div>
                   </div>
                       <div className="section2-2-image-div">
                         <img src={section2_image} className='section2-2-image' alt="teaching" />
-                      </div>
+                      </div>         
+            </div>
+            <div className="section2-2-submain2">
+              <div className="progress">
+                <div className="outer-path">
+                  <CircularProgressBar percentage={progress} />
+                </div>
+                <h3 className='progress-subheaders'>IT Consultancy</h3>
+              </div>
+              <div className="progress1 progressbar2">
+                <div className="outer-path">
+                  <CircularProgressBar percentage={progress1} />
+                </div>
+                <h3 className='progress-subheaders'>Custom Software<br/> Development</h3>
+              </div>
+              <div className="progress">
+                <div className="outer-path">
+                  <CircularProgressBar percentage={progress2} />
+                </div>
+                <h3 className='progress-subheaders'>Testing</h3>
+              </div>
+              <div className="progress1">
+                <div className="outer-path">
+                  <CircularProgressBar percentage={progress3} />
+                </div>
+                <h3 className='progress-subheaders'>Marketing</h3>
+              </div>
             </div>
           </div>
         </section>
+      
+        
+        <section id='3' className='section3'>
+                  <div className="section3">
+
+                  <div className="section3-main">
+
+                    <div className="section3-submain">
+                      <div className="section3-headers">
+                        <div className="section2-2-small-title-main-div">
+                            <div className="dot-1">
+                              <p className='dot-1-p'>.</p>
+                            </div>
+                            <div className="section2-2-small-title-div">
+                              <h6 className='section2-2-small-title section3-title'>
+                                our services
+                              </h6>
+                            </div>
+                        </div>
+                          <div className="section2-2-title-div section3-title">
+                              <h3 className='section2-2-title'>Take a Look at Our Best IT Solution Services</h3>
+                          </div>
+                          
+                      </div>
+                  {/* <div className="section3-bgoverlay"> */}
+                      <div className="tabs">
+                        <Tabs/>
+                      </div>
+                  {/* </div> */}
+                    </div>
+                      
+              
+                 </div>    
+              </div>        
+        </section>
+
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
       </div>
      
      
