@@ -404,6 +404,7 @@ li::before{
   justify-content: space-around;
   height: 35vh;
   margin-top: 1rem;
+  margin-bottom: 10vh;
   /* flex-wrap: wrap; */
 }
 
@@ -507,6 +508,7 @@ li::before{
     justify-content: space-around;
     height: auto;
     margin-top: 1rem;
+    margin-bottom: 1rem;
   }
   
   .progress{
@@ -565,9 +567,10 @@ li::before{
   background-color: transparent;
   height: auto;  
   width: 100%;
+  background-color: #1459ba;
   display: flex;
   justify-content: center;
-  margin-top: 20vh;
+  /* padding-top: 20vh; */
   /* padding-bottom: 20vh; */
 }
 
@@ -718,6 +721,6 @@ li::before{
   flex-wrap: wrap;
 }
 .footer-text{
-  /* padding: 1rem; */
+  padding: 1rem;
   color: white;
 }
