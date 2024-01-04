@@ -1,4 +1,4 @@
-import React, { useState,useEffect } from "react";
+import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faChartPie,
@@ -15,14 +15,10 @@ import uiux from "../../assets/UiUx.png";
 import qa from "../../assets/QA.png";
 import digimarket from "../../assets/Digi Marketing.png";
 import app from "../../assets/app-develop.png";
-import 'aos/dist/aos.css'; // Import the CSS file for AOS
-import AOS from 'aos';
+// import "aos/dist/aos.css"; // Import the CSS file for AOS
+// import AOS from "aos";
 const Tabs = () => {
   const [activeTab, setActiveTab] = useState("Tab1");
-  useEffect(() => {
-    AOS.init();
-  }, []);
-
   const handleTabClick = (tab) => {
     setActiveTab(tab);
   };
@@ -98,14 +94,22 @@ const Tabs = () => {
               <div className="tab2-main">
                 <div className="tab2-submain">
                   <div className="tab2-content-div">
-                    <div className="tab2-title-div"data-aos="fade-right" data-aos-duration="1000">
+                    <div
+                      className="tab2-title-div"
+                      //data-aos="fade-right"
+                   // data-aos-duration="1000"
+                    >
                       <h3 className="tab2-title">
                         Web Alchemy: Crafting Digital Experiences Beyond
                         Imagination
                       </h3>
                     </div>
 
-                    <div className="tab2-paragraph-div"data-aos="fade-right" data-aos-duration="1000">
+                    <div
+                      className="tab2-paragraph-div"
+                      //data-aos="fade-right"
+                   // data-aos-duration="1000"
+                    >
                       <p className="tab2-para">
                         Our Web Development services transcend conventional
                         boundaries, taking your online presence to new heights.
@@ -118,7 +122,11 @@ const Tabs = () => {
                     </div>
                   </div>
 
-                  <div className="tab2-img-div" data-aos="fade-left" data-aos-duration="1000">
+                  <div
+                    className="tab2-img-div"
+                    //data-aos="fade-left"
+                   // data-aos-duration="1000"
+                  >
                     <img
                       src={web}
                       className="tab2-image"
@@ -133,13 +141,21 @@ const Tabs = () => {
               <div className="tab2-main">
                 <div className="tab2-submain">
                   <div className="tab2-content-div">
-                    <div className="tab2-title-div"data-aos="fade-right" data-aos-duration="1000">
+                    <div
+                      className="tab2-title-div"
+                      //data-aos="fade-right"
+                   // data-aos-duration="1000"
+                    >
                       <h3 className="tab2-title">
                         CodeCraft: Forging Solutions that Redefine Excellence
                       </h3>
                     </div>
 
-                    <div className="tab2-paragraph-div"data-aos="fade-right" data-aos-duration="1000">
+                    <div
+                      className="tab2-paragraph-div"
+                      //data-aos="fade-right"
+                   // data-aos-duration="1000"
+                    >
                       <p className="tab2-para">
                         Software Development is our playground of innovation.
                         Our team of coding virtuosos are not just developers;
@@ -152,7 +168,11 @@ const Tabs = () => {
                     </div>
                   </div>
 
-                  <div className="tab2-img-div"data-aos="fade-left" data-aos-duration="1000">
+                  <div
+                    className="tab2-img-div"
+                    //data-aos="fade-left"
+                   // data-aos-duration="1000"
+                  >
                     <img
                       src={software}
                       className="tab2-img"
@@ -166,13 +186,21 @@ const Tabs = () => {
               <div className="tab2-main">
                 <div className="tab2-submain">
                   <div className="tab2-content-div">
-                    <div className="tab2-title-div"data-aos="fade-right" data-aos-duration="1000">
+                    <div
+                      className="tab2-title-div"
+                      //data-aos="fade-right"
+                   // data-aos-duration="1000"
+                    >
                       <h3 className="tab2-title">
                         Mobile Fusion: Where Apps Come to Life
                       </h3>
                     </div>
 
-                    <div className="tab2-paragraph-div"data-aos="fade-right" data-aos-duration="1000">
+                    <div
+                      className="tab2-paragraph-div"
+                      //data-aos="fade-right"
+                   // data-aos-duration="1000"
+                    >
                       <p className="tab2-para">
                         Mobile App Development is our forte, and innovation is
                         our driving force. In a world where mobile apps are the
@@ -185,7 +213,11 @@ const Tabs = () => {
                     </div>
                   </div>
 
-                  <div className="tab2-img-div"data-aos="fade-left" data-aos-duration="1000">
+                  <div
+                    className="tab2-img-div"
+                    //data-aos="fade-left"
+                   // data-aos-duration="1000"
+                  >
                     <img src={app} className="tab2-img" alt="app develop" />
                   </div>
                 </div>
@@ -197,13 +229,21 @@ const Tabs = () => {
                 <div className="tab2-main">
                   <div className="tab2-submain">
                     <div className="tab2-content-div">
-                      <div className="tab2-title-div"data-aos="fade-right" data-aos-duration="1000">
+                      <div
+                        className="tab2-title-div"
+                        //data-aos="fade-right"
+                        //data-aos-duration="1000"
+                      >
                         <h3 className="tab2-title">
                           Digital Dynamo: Navigating the Digital Ecosystem
                         </h3>
                       </div>
 
-                      <div className="tab2-paragraph-div"data-aos="fade-right" data-aos-duration="1000">
+                      <div
+                        className="tab2-paragraph-div"
+                        //data-aos="fade-right"
+                        //data-aos-duration="1000"
+                      >
                         <p className="tab2-para">
                           Digital Marketing is our compass in the vast digital
                           ecosystem. We understand that success in the digital
@@ -216,7 +256,11 @@ const Tabs = () => {
                       </div>
                     </div>
 
-                    <div className="tab2-img-div"data-aos="fade-left" data-aos-duration="1000">
+                    <div
+                      className="tab2-img-div"
+                      //data-aos="fade-left"
+                   // data-aos-duration="1000"
+                    >
                       <img
                         src={digimarket}
                         className="tab2-img"
@@ -232,13 +276,21 @@ const Tabs = () => {
                 <div className="tab2-main">
                   <div className="tab2-submain">
                     <div className="tab2-content-div">
-                      <div className="tab2-title-div"data-aos="fade-right" data-aos-duration="1000">
+                      <div
+                        className="tab2-title-div"
+                        //data-aos="fade-right"
+                        //data-aos-duration="1000"
+                      >
                         <h3 className="tab2-title">
                           Design Reverie: Enchanting User Experiences
                         </h3>
                       </div>
 
-                      <div className="tab2-paragraph-div"data-aos="fade-right" data-aos-duration="1000">
+                      <div
+                        className="tab2-paragraph-div"
+                        //data-aos="fade-right"
+                        //data-aos-duration="1000"
+                      >
                         <p className="tab2-para">
                           In the realm of UX/UI Design, we are dreamweavers. Our
                           designs are more than just visual; they are
@@ -252,7 +304,11 @@ const Tabs = () => {
                       </div>
                     </div>
 
-                    <div className="tab2-img-div"data-aos="fade-left" data-aos-duration="1000">
+                    <div
+                      className="tab2-img-div"
+                      //data-aos="fade-left"
+                   // data-aos-duration="1000"
+                    >
                       <img src={uiux} className="tab2-img" alt="app develop" />
                     </div>
                   </div>
@@ -264,14 +320,22 @@ const Tabs = () => {
                 <div className="tab2-main">
                   <div className="tab2-submain">
                     <div className="tab2-content-div">
-                      <div className="tab2-title-div"data-aos="fade-right" data-aos-duration="1000">
+                      <div
+                        className="tab2-title-div"
+                        //data-aos="fade-right"
+                        //data-aos-duration="1000"
+                      >
                         <h3 className="tab2-title">
                           Meticulous Maestros: Symphony of Quality and
                           Reliability
                         </h3>
                       </div>
 
-                      <div className="tab2-paragraph-div"data-aos="fade-right" data-aos-duration="1000">
+                      <div
+                        className="tab2-paragraph-div"
+                        //data-aos="fade-right"
+                        //data-aos-duration="1000"
+                      >
                         <p className="tab2-para">
                           Quality Assurance and Testing are the cornerstones of
                           our commitment to excellence. We don’t settle for
@@ -284,7 +348,11 @@ const Tabs = () => {
                       </div>
                     </div>
 
-                    <div className="tab2-img-div"data-aos="fade-left" data-aos-duration="1000">
+                    <div
+                      className="tab2-img-div"
+                      //data-aos="fade-left"
+                   // data-aos-duration="1000"
+                    >
                       <img src={qa} className="tab2-img" alt="app develop" />
                     </div>
                   </div>

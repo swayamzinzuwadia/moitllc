@@ -1,5 +1,5 @@
 // HomePage.js
-import { React, useEffect } from "react";
+import { React} from "react";
 import "./homepage.css";
 // import './tailwind.css';
 import ContainerOutsideExample from "../components/navbar";
@@ -16,16 +16,16 @@ import {
   faGears,
   faLaptopCode,
 } from "@fortawesome/free-solid-svg-icons";
-import "aos/dist/aos.css"; // Import the CSS file for AOS
-import AOS from "aos";
+// import "aos/dist/aos.css"; // Import the CSS file for AOS
+// import AOS from "aos";
 import CircularProgressBar from "../components/circular-progress-bar";
 import Tabs from "../components/Tabs/Tabs";
 import section4 from "../assets/section4.png";
 
 const HomePage = () => {
-  useEffect(() => {
-    AOS.init();
-  }, []);
+  // useEffect(() => {
+  //   // AOS.init({});
+  // }, []);
   const progress = 87;
   const progress1 = 86;
   const progress2 = 94;
@@ -95,8 +95,7 @@ const HomePage = () => {
               <div className="card-div">
                 <div
                   className="card-div-row"
-                  data-aos="fade-right"
-                  data-aos-duration="1000"
+                  
                 >
                   <div className="card">
                     <FontAwesomeIcon
@@ -134,8 +133,8 @@ const HomePage = () => {
                 </div>
                 <div
                   className="card-div-row"
-                  data-aos="fade-left"
-                  data-aos-duration="1000"
+                  // data-aos="fade-right"
+                  // data-aos-duration="1000"
                 >
                   <div className="card">
                     <FontAwesomeIcon
@@ -181,8 +180,8 @@ const HomePage = () => {
               <div className="section2-2-submain">
                 <div
                   className="section2-2-content-div"
-                  data-aos="fade-right"
-                  data-aos-duration="1000"
+                  // data-aos="fade-right"
+                  // data-aos-duration="1000"
                 >
                   <div className="section2-2-small-title-main-div">
                     <div className="dot-1">
@@ -215,8 +214,8 @@ const HomePage = () => {
                 </div>
                 <div
                   className="section2-2-image-div"
-                  data-aos="fade-left"
-                  data-aos-duration="1000"
+                  // data-aos="fade-left"
+                  // data-aos-duration="1000"
                 >
                   <img
                     src={section2_image}
@@ -228,8 +227,8 @@ const HomePage = () => {
               <div className="section2-2-submain2">
                 <div
                   className="progress"
-                  data-aos="fade-up"
-                  data-aos-duration="1000"
+                  // data-aos="fade-up"
+                  // data-aos-duration="1000"
                 >
                   <div className="outer-path">
                     <CircularProgressBar percentage={progress} />
@@ -238,8 +237,8 @@ const HomePage = () => {
                 </div>
                 <div
                   className="progress1 progressbar2"
-                  data-aos="fade-down"
-                  data-aos-duration="1000"
+                  // data-aos="fade-down"
+                  // data-aos-duration="1000"
                 >
                   <div className="outer-path">
                     <CircularProgressBar percentage={progress1} />
@@ -251,8 +250,8 @@ const HomePage = () => {
                 </div>
                 <div
                   className="progress"
-                  data-aos="fade-up"
-                  data-aos-duration="1000"
+                  // data-aos="fade-up"
+                  // data-aos-duration="1000"
                 >
                   <div className="outer-path">
                     <CircularProgressBar percentage={progress2} />
@@ -261,8 +260,8 @@ const HomePage = () => {
                 </div>
                 <div
                   className="progress1"
-                  data-aos="fade-down"
-                  data-aos-duration="1000"
+                  // data-aos="fade-down"
+                  // data-aos-duration="1000"
                 >
                   <div className="outer-path">
                     <CircularProgressBar percentage={progress3} />
@@ -282,14 +281,14 @@ const HomePage = () => {
                       <div className="dot-1">
                         <p className="dot-1-p">.</p>
                       </div>
-                      <div className="section2-2-small-title-div">
-                        <h6 className="section2-2-small-title section3-title">
+                      <div className="section3-small-title-div">
+                        <h6 className="section3-small-title">
                           our services
                         </h6>
                       </div>
                     </div>
-                    <div className="section2-2-title-div section3-title">
-                      <h3 className="section2-2-title">
+                    <div className="section3-title-div">
+                      <h3 className="section3-title">
                         Take a Look at Our Best IT Solution Services
                       </h3>
                     </div>
@@ -342,7 +341,7 @@ const HomePage = () => {
         <section id="footer">
           <div className="footer">
             <Footer/>
-             <p className="footer-text">Copyright © 2023 Taqniyah IT Solutions . All Rights Reserved.</p>         
+             <p className="footer-text">Copyright © 2023 MOIT.LLC IT Solutions . All Rights Reserved.</p>         
           </div>
         </section>
 
