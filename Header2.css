@@ -1,0 +1,118 @@
+/* Header2.css
+
+.dcell {
+    display: table;
+    width: 100%;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    vertical-align: middle;
+    background:#0042a1;
+    position: relative; 
+  }
+  
+  .container {
+    display: table;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    height: 200px;
+    color: #ffffff;
+    border-bottom: #ffffff;
+    border-radius: 10px;
+  }
+  .container::before {
+    content: '• • •';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    font-size: 1.5rem;
+    color: red;
+  }
+  
+  .page-title {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  .breadcrumbs {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .breadcrumbs li {
+    display: inline;
+    margin-right: 5px;
+  }
+  
+  .breadcrumbs li a {
+    text-decoration: none;
+    color: #f4f4f4;
+  }
+  
+  .home-link {
+    text-decoration: none;
+    color: #ffffff;
+  }
+   */
+   .text-center {
+    text-align: center;
+  }
+  .page-header {
+      width: 100%;
+      padding-top: 100px;
+      padding-bottom: 100px;
+      font-family: "Red Hat Display", sans-serif;
+      font-weight: 500;
+      background: center center no-repeat;
+      background-size: cover;
+      text-align: center;
+  }
+  .dcell {
+    display: table;
+    width: 100%;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    vertical-align: middle;
+    background: none;
+    position: relative;
+    overflow: hidden;
+}
+.container {
+  display: table;
+  width: 100%;
+  text-align: center;
+  position: relative;
+  height: 200px;
+  color: #000000;
+  border-bottom: #ffffff;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.home-link {
+  text-decoration: none;
+  color: #000000;
+}
+.page-title {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.breadcrumbs {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.breadcrumbs li {
+  display: inline;
+  margin-right: 5px;
+}
+
+.breadcrumbs li a {
+  text-decoration: none;
+  color: #000000;
+}
