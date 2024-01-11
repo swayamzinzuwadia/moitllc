@@ -57,7 +57,7 @@ const HomePage = () => {
                         )
                         .pauseFor(1000)
                         // .deleteAll()
-                        .typeString("<br />At M.O.I.T.L.L.C")
+                        .typeString("<br />At Money Ocean Information Technology")
                         .start();
                     }}
                   />
@@ -87,7 +87,7 @@ const HomePage = () => {
               </div>
 
               <h2 className="it-solutions">
-                Why Choose M.O.I.T.L.L.C
+                Why Choose Money Ocean Information Technology
                 <br />
                 As your best IT Solution Partner
               </h2>
@@ -105,7 +105,7 @@ const HomePage = () => {
                     <h3 className="card-headers">Expertise</h3>
                     <p className="card-paragraphs">
                       One size does not fit all in the world of IT solutions,
-                      and that's where Moit excels
+                      and that's where Money Ocean Information Technology excels
                     </p>
                   </div>
                   <div className="card">
@@ -116,7 +116,7 @@ const HomePage = () => {
                     <h3 className="card-headers">Solution</h3>
                     <p className="card-paragraphs">
                       One size does not fit all in the world of IT solutions,
-                      and that's where Moit excels.
+                      and that's where Money Ocean Information Technology excels.
                     </p>
                   </div>
                   <div className="card">
@@ -126,7 +126,7 @@ const HomePage = () => {
                     />
                     <h3 className="card-headers">Customer Approach</h3>
                     <p className="card-paragraphs">
-                      Choosing MOIT means choosing a partner that puts your
+                      Choosing Money Ocean Information Technology means choosing a partner that puts your
                       vision at the forefront.
                     </p>
                   </div>
@@ -198,7 +198,7 @@ const HomePage = () => {
                   </div>
                   <div className="section2-2-para-div">
                     <p className="section2-2-para1">
-                      At Moit IT Solutions, we are your trusted partner in
+                      At Money Ocean Information Technology IT Solutions, we are your trusted partner in
                       providing cutting-edge IT solutions tailored to meet the
                       unique needs of businesses in Dubai and beyond.
                     </p>
@@ -208,7 +208,7 @@ const HomePage = () => {
                       creation, mobile app design, digital marketing, and more.
                       Our dedicated team of experts is committed to delivering
                       top-tier solutions that drive your business forward.
-                      Explore the world of technology with Moit IT Solutions.
+                      Explore the world of technology with Money Ocean Information Technology IT Solutions.
                     </p>
                   </div>
                 </div>
@@ -271,6 +271,7 @@ const HomePage = () => {
               </div>
             </div>
           </section>
+        </div>
 
           <section id="3" className="section3">
             <div className="section3">
@@ -304,8 +305,8 @@ const HomePage = () => {
           </section>
 
           <section id="section4">
-            <div className="section4-main">
               <div className="section4-bgoverlay">
+            <div className="section4-main">
                 <div className="section4-submain">
                   <div className="section4-image-div">
                     <img
@@ -320,8 +321,8 @@ const HomePage = () => {
                         <p className="dot-1-p">.</p>
                       </div>
                       <div className="section2-2-small-title-div">
-                        <h6 className="section2-2-small-title section3-title">
-                          Perks
+                        <h6 className="section3-small-title">
+                          perks
                         </h6>
                       </div>
                     </div>
@@ -329,7 +330,7 @@ const HomePage = () => {
                       <h4 className="section2-2-title">
                         Benefits of Having Best IT Solutions
                       </h4>
-                      <p className=" section4-para">Moit stands out as an IT partner with a track record of excellence. With over a decade of experience, their team of highly trained professionals is equipped to handle diverse IT challenges. Moit’s dedication to customer satisfaction is evident in their client success stories. They hold industry awards, certifications, and specializations that underscore their expertise. Moit’s holistic approach ensures that your IT needs are not just met, but exceeded.</p>
+                      <p className=" section4-para">Money Ocean Information Technology stands out as an IT partner with a track record of excellence. With over a decade of experience, their team of highly trained professionals is equipped to handle diverse IT challenges. Money Ocean Information Technology’s dedication to customer satisfaction is evident in their client success stories. They hold industry awards, certifications, and specializations that underscore their expertise. Money Ocean Information Technology’s holistic approach ensures that your IT needs are not just met, but exceeded.</p>
                     </div>
                   </div>
                 </div>
@@ -338,15 +339,14 @@ const HomePage = () => {
           </section>
 
 
-        <section id="footer">
-          <div className="footer">
-            <Footer/>
-             <p className="footer-text">Copyright © 2023 MOIT.LLC IT Solutions . All Rights Reserved.</p>         
-          </div>
-        </section>
+          <section id="footer">
+            <div className="footer">
+              <Footer/>
+              <p className="footer-text">Copyright © 2023 Money Ocean Information Technology.LLC IT Solutions . All Rights Reserved.</p>         
+            </div>
+          </section>
 
 
-        </div>
       </div>
     </>
   );

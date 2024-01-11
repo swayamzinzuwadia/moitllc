@@ -266,7 +266,7 @@
 }
 
 .tab2-title-div{
-    max-width: 70%;
+    max-width: 95%;
 }
 
 /* TAB2 Mobile */
@@ -424,3 +424,49 @@
 
 
 } */
+
+@media screen and (max-width:1024px){
+    #mobile-tabs{
+        /* visibility: visible; */
+        display: flex;
+        max-width: 80%;
+
+    }
+    #laptop-tabs{
+        /* visibility: hidden; */
+        display: none;
+    }
+    .tab{
+        position: relative;
+    }
+    
+}
+.slick-dots {
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+  
+  .slick-dots li {
+    margin: 0 4px !important;
+  }
+  
+  .slick-prev,
+  .slick-next {
+    display: none;
+  }
+
+@media screen and (min-width:1025px) {
+    
+    #mobile-tabs{
+        /* visibility: hidden ; */
+        display: none;
+    }   
+    #laptop-tabs{
+        /* visibility: visible; */
+        display: flex;
+    }
+    
+}
+

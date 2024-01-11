@@ -15,6 +15,9 @@ import uiux from "../../assets/UiUx.png";
 import qa from "../../assets/QA.png";
 import digimarket from "../../assets/Digi Marketing.png";
 import app from "../../assets/app-develop.png";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 // import "aos/dist/aos.css"; // Import the CSS file for AOS
 // import AOS from "aos";
 const Tabs = () => {
@@ -22,11 +25,90 @@ const Tabs = () => {
   const handleTabClick = (tab) => {
     setActiveTab(tab);
   };
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    adaptiveHeight: true,
+
+  };
 
   return (
     <div className="tabs-superwrap">
       <div className="tabs-maindiv">
-        <div className="tabs-subdiv">
+
+
+        
+        <div className="tabs-subdiv" id="mobile-tabs">
+          <Slider {...settings} >
+            <button
+              onClick={() => handleTabClick("Tab1")}
+              className={`tab ${activeTab === "Tab1" ? "active" : ""}`}
+            >
+              <FontAwesomeIcon className="tab-icon" icon={faChartPie} />
+              <h6 className="tab-headers">Web Development</h6>
+              <div
+                className={`onactive ${activeTab === "Tab1" ? "show" : ""}`}
+              ></div>
+            </button>
+            <button
+              onClick={() => handleTabClick("Tab2")}
+              className={`tab ${activeTab === "Tab2" ? "active" : ""}`}
+            >
+              <FontAwesomeIcon className="tab-icon" icon={faChalkboard} />
+              <h6 className="tab-headers">Software Development</h6>
+              <div
+                className={`onactive ${activeTab === "Tab2" ? "show" : ""}`}
+              ></div>
+            </button>
+            <button
+              onClick={() => handleTabClick("Tab3")}
+              className={`tab ${activeTab === "Tab3" ? "active" : ""}`}
+            >
+              <FontAwesomeIcon className="tab-icon" icon={faMobile} />
+              <h6 className="tab-headers">Mobile App Development</h6>
+              <div
+                className={`onactive ${activeTab === "Tab3" ? "show" : ""}`}
+              ></div>
+            </button>
+            <button
+              onClick={() => handleTabClick("Tab4")}
+              className={`tab ${activeTab === "Tab4" ? "active" : ""}`}
+            >
+              <FontAwesomeIcon className="tab-icon" icon={faMagnifyingGlass} />
+              <h6 className="tab-headers">Digital Marketing</h6>
+              <div
+                className={`onactive ${activeTab === "Tab4" ? "show" : ""}`}
+              ></div>
+            </button>
+            <button
+              onClick={() => handleTabClick("Tab5")}
+              className={`tab ${activeTab === "Tab5" ? "active" : ""}`}
+            >
+              <FontAwesomeIcon className="tab-icon" icon={faLaptopCode} />
+              <h6 className="tab-headers">Ui/UX Design</h6>
+              <div
+                className={`onactive ${activeTab === "Tab5" ? "show" : ""}`}
+              ></div>
+            </button>
+            <button
+              onClick={() => handleTabClick("Tab6")}
+              className={`tab ${activeTab === "Tab6" ? "active" : ""}`}
+            >
+              <FontAwesomeIcon className="tab-icon" icon={faCloud} />
+              <h6 className="tab-headers">QA & Testing</h6>
+              <div
+                className={`onactive ${activeTab === "Tab6" ? "show" : ""}`}
+              ></div>
+            </button>
+          </Slider>
+        </div>
+
+
+
+        <div className="tabs-subdiv" id="laptop-tabs">
           <button
             onClick={() => handleTabClick("Tab1")}
             className={`tab ${activeTab === "Tab1" ? "active" : ""}`}
@@ -88,6 +170,13 @@ const Tabs = () => {
             ></div>
           </button>
         </div>
+
+
+
+
+
+
+
         <div className="section3-bgoverlay">
           <div className="activetabs">
             {activeTab === "Tab1" && (

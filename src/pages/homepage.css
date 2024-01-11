@@ -15,8 +15,10 @@
   display: flex;
   flex-direction: column;
   height: auto;
-  /* overflow-x: hidden; */
+  /* overflow-y: hidden; */
 }
+
+
 .section1-main2-div{
   display: flex;
   flex-direction: column;
@@ -25,19 +27,22 @@
   background-image: url('../assets/bg-banner-home6.png');
   background-repeat: no-repeat;
   background-size: cover;
-
+  background-color: #1459BA;
 }
+
 .section1-main3-div{
   display: flex;
   flex-direction: row;
 }
 .typewriter{
-    color: white;
-    /* font-family: 'PlayFair Display', sans-serif; */
-    font-weight: 700;
-    font-size: 3.5rem;
-    text-align: left;
-
+  color: white;
+  /* font-family: 'PlayFair Display', sans-serif; */
+  font-weight: 700;
+  font-size: 2.65rem;
+  text-align: left;
+  min-height: 10rem;
+  max-height: 10rem;
+  
 }
 
 .text-section1{
@@ -50,8 +55,8 @@
   /* justify-content: center; */
 }
 .it-home-pic{
-  width: 75%;
-  height: auto;
+  width: 80%;
+  /* height: 30rem; */
   margin-right: 2rem;
 }
 .img-div{
@@ -108,7 +113,7 @@
 
 /* SECTION 1 - MOBILE */
 
-@media screen and (max-width: 650px){
+@media screen and (max-width: 1020px){
   
   .section1-main2-div{
     display: flex;
@@ -179,7 +184,7 @@
   background-image: url("../assets/bg-shape1-home6.png");
   /* height: 500vh; */
   background-repeat: no-repeat; 
-  z-index: 10;
+  /* z-index: 10; */
   background-color: #0049B1;
 }
 
@@ -191,6 +196,7 @@
   align-items: center;
   /* justify-content: center; */
   flex-direction: column;
+  max-width: 100%;
 }
 
 .small-tittle-div{
@@ -228,8 +234,9 @@ li::before{
 .it-solutions{
   font-family:  'Raleway',sans-serif;
   color: white;
-  font-size: 50px;
+  font-size: 2rem;
   font-weight: bold;
+  text-align: center;
 }
 
 .card-div{
@@ -244,14 +251,14 @@ li::before{
   flex-direction: row;
   justify-content: space-evenly;
   margin-top: 5rem;
-  width: 90%;
+  width: 100%;
 }
 
 .card{
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 35%;
+  width: 25%;
   height: 40vh;
   justify-content: space-evenly;
   border-radius: 1rem;
@@ -259,14 +266,16 @@ li::before{
 
 .card-headers{
   color: white;
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-weight: bolder;
 }
 
 .card-paragraphs{
   width: 75%;
+  font-size: 0.8rem;
   color: aqua;
   font-weight: 400;
+  text-align: center;
 }
 
 .section2-card-icon{
@@ -277,11 +286,11 @@ li::before{
 .card:hover{
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 0 10px rgba(138, 138, 138, 0.2);
   transform: scale(1.1);
-  transition: box-shadow 0.3s ease, transform 0.5s ease; /* Add a smooth transition effect */
+  transition: box-shadow 0.3s ease, transform 0.5s ease; 
 }
 
 /* Section2 mobile */
-@media screen and (max-width: 600px){
+@media screen and (max-width: 1020px){
   
   .card-div-row{
     display: flex;
@@ -297,7 +306,7 @@ li::before{
   .card-div{
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 80%;
     align-items: center;
     justify-content: center;
   }
@@ -305,8 +314,8 @@ li::before{
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 85%;
-    height: 40vh;
+    width: 75%;
+    height: 30vh;
     justify-content: space-evenly;
     border-radius: 1rem;
     margin-top: 2rem;
@@ -328,24 +337,25 @@ li::before{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #0049b1;
+  background-color: transparent;
   padding-bottom: 5rem;
+  max-width: 100%;
 }
 .section2-2-submain{
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   margin-top: 5rem;
-  width: 100%;
+  max-width: 80%;
   justify-content: center;
 }
 
 .section2-2-content-div{
-  max-width: 32%;
+  max-width: 50%;
   line-height: 1.5rem;
 }
 .section2-2-image-div{
-  width: 30%;
+  width: 40%;
   margin-left: 2.5rem;
 }
 
@@ -382,6 +392,7 @@ li::before{
   color: #0EC6FF;
   text-align: left;
   font-size: 1.5rem;
+  font-family: 'Raleway',sans-serif;
 }
 
 .section2-2-title-div{
@@ -399,23 +410,27 @@ li::before{
 }
 
 .section2-2-para1{
-  font-family: 'Raleway',sans-serif;
+  font-family: 'PlayFair Display',sans-serif;
   font-size: 1.3rem;
   color: white;
   text-align: start;
   line-height: 35px;
 }
 .section2-2-para2{
+  font-family: 'PlayFair Display',sans-serif;
   font-size: 1rem;
+  line-height: 32px;
+  text-align: left;
   color: white;
-  text-align: start;
+  font-weight: 300;
 }
 .section2-2-para-div{
   margin-top: 1rem;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  height: 18rem;
+
+  height: 25rem;
 }
 /* .section2-2-image{
   width: 50rem;
@@ -423,7 +438,7 @@ li::before{
 } */
 
 .section2-2-submain2{
-  width: 70%;
+  width: 80%;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -470,7 +485,7 @@ li::before{
 
 /* SECTION2-2 mobile */
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1020px) {
   .section2-2-submain{
     display: flex;
     flex-direction: column;
@@ -591,7 +606,7 @@ li::before{
   /* background-position:top left; */
   background-color: transparent;
   height: auto;  
-  width: 100%;
+  max-width: 100%;
   background-color: #1459ba;
   display: flex;
   justify-content: center;
@@ -631,7 +646,7 @@ li::before{
   font-weight: 700;
   color: #0EC6FF;
   text-align: left;
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 
 .section3-title-div{
@@ -657,7 +672,7 @@ li::before{
 
 .section3-headers{
   max-width: 100%;
-  margin-left: 16rem;
+  margin-left: 9rem;
   /* margin-top: 2rem; */
 }
 
@@ -668,7 +683,7 @@ li::before{
 
 
 
-@media screen and (max-width:600px) {
+@media screen and (max-width:1020px) {
   .section3{
     background-image: url(../assets/bg-shape2-home6.jpg);
     background-position: top;
@@ -741,15 +756,19 @@ li::before{
 
 .section4-main{
   width: 100%;
-  background-color: #0049b1; 
+  /* background-color: #0049b1;  */
   display: flex;  
+  justify-content: center;
+  align-items: center;
   /* margin-top: 10vh; */
   height: fit-content;
   /* border: 2px solid red; */
+  margin-top: 10rem;
+  margin-bottom: 10rem;
 }
 
 .section4-bgoverlay{
-  background-image: url(../assets/bg-shape4-home6.png);
+  background-image: url("../assets/bg-shape4-home6.png");
   width: 100%;
   background-repeat: no-repeat;
   background-size: contain;
@@ -757,8 +776,9 @@ li::before{
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 10rem;
-  margin-bottom: 10rem;
+  /* margin-top: 10rem;
+  margin-bottom: 10rem; */
+  height: max-content;
 }
 
 .section4-submain{
@@ -782,14 +802,16 @@ li::before{
 
 .section4-para{
   margin-top: 1rem;
-  font-size: 1.2rem;
+  font-family: 'PlayFair Display',sans-serif;
+  font-size: 1rem;
+  line-height: 32px;
   text-align: left;
   color: white;
   font-weight: 300;
 }
 
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 1020px){
   .section4-submain{
     display: flex;
     flex-direction: column-reverse;
@@ -818,6 +840,7 @@ li::before{
 }
 
 .footer{
+  background-image: url("../assets/bg-shape3-home6.png");
   min-width: 100%;
   display: flex;
   flex-direction: column;
@@ -829,4 +852,5 @@ li::before{
 .footer-text{
   padding: 1rem;
   color: white;
+  text-align: center;
 }

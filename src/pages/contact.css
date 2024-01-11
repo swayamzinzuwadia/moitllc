@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant&family=Playfair+Display&family=Raleway&display=swap');
+
+
+.heading-section{
+    background-image: url("../assets/bg-page-header.jpg");
+    min-width: 100%;
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-size: contain;
+}
+
+/* Contact Page whole layout */
+.contact-main{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 150vh;
+}
+
+.contact-submain{
+    min-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.heading-main-banner{
+    font-family: 'Raleway',sans-serif;
+    font-weight: 800;
+}
+.main-section{
+    width: 80%;
+}
+.submain-section1{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    /* align-items: center; */
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+/* Blue Div */
+.blue-div{
+    display: flex;
+    background-image: linear-gradient(145deg, #0039e4 0%, #04dbf1 100%);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    min-width: 100%;
+}
+.blue-div-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 50%;
+
+}
+
+.blue-div-submain{
+    width: 90%;
+    height: 95%;
+}
+
+.contactus-bulletpoint{
+    font-size: 0.8rem;
+    margin-top: 0.25rem;
+    color: WHITE;
+    font-weight: 700;
+    letter-spacing: 0.09rem;
+}
+
+.title-contact{
+    width: 100%;
+    font-size: 2rem;
+    color: white;
+}
+
+.dot-1-p-contact{
+    font-size: 0.5rem;
+}
+
+
+/* Form Div */
+
+.form-main-div{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    min-width: 50%;
+}
+.form-submain{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+
+
+
+@media screen and (max-width:600px) {
+    .submain-section1{
+        flex-direction: column;
+    }
+    .contact-submain{
+        max-width: 100%;
+    }
+    .blue-div{
+        min-width: 80%;
+    }
+}   
