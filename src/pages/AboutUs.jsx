@@ -1,22 +1,41 @@
+/* eslint-disable react/jsx-no-target-blank */
 // Content.js
-import React from 'react'
-import './Content.css'
-import CircularProgressBar from '../components/circular-progress-bar'
+import React from 'react';
+import './Content.css';
+// import CircularProgressBar from '../components/circular-progress-bar'
+import img from '../assets/HEADER2.png'
+import img2 from '../assets/about-us.png'
+// import Header2 from '../components/Header2';
+import "../pages/contact.css";
 
 const Content = () => {
-  const progress1 = 90
-  const progress2 = 80
-  const progress3 = 87
+  function goToHome() {
+    console.log('Go to homeee')
+  }
+  // const progress1 = 90
+  // const progress2 = 80
+  // const progress3 = 87
   return (
-    <div className="content-container">
+    <div className="content-container ">
+      <div className="content-head">
+      <div className="heading-section">
+          <p classname="heading-main-banner main-font">About Us</p>
+          <p className="home-link" onClick={goToHome}>
+            Home &gt; About Us
+          </p>
+        </div>
+      </div>
+      <div className="image-section-main">
+
       <div className="image-section">
         <img
-          src={process.env.PUBLIC_URL + '/about-us-1137x1536.png'}
+          src={img}
           alt="Description"
           className="custom-image"
-        />
-        <p>
-          <h2>Welcome to Money Ocean Information Technology Solutions</h2> At
+          />
+        <p className='paragraph-imgsec'>
+          <h2 className=' text-4xl font-bold font-weight: 500;'>Welcome to Money Ocean Information Technology Solutions</h2> <br></br>
+          <div className='text-xs text-center justify-content: center max-width: 10rem;' >At
           Money Ocean Information Technology Solutions, we transcend technology
           to craft digital solutions that empower businesses for success in the
           modern digital landscape. Headquartered in the vibrant city of Dubai,
@@ -24,7 +43,10 @@ const Content = () => {
           spectrum of services that encompass web development, software
           development, mobile app development, digital marketing, quality
           assurance, and innovative Software as a Service (SaaS) offerings.
+          </div>
         </p>
+        
+      </div>
       </div>
       {/* Three small cards */}
       <div className="card-container">
@@ -43,20 +65,35 @@ const Content = () => {
       </div>
 
       {/* Space for more text */}
+      <div className="additional-text-main">
+      <div className="additional-text-submain">
+
       <div className="additional-text">
-        <img
-          src={process.env.PUBLIC_URL + '/aboutus-2048x963.png'}
-          alt="Description"
-          className="next_image"
-        />
-        <p>
-          <h1>Work with a Dedicated IT Solutions Company</h1>
+        <p className='text-sm paragraph-additional-text'>
+            <div className="section2-2-small-title-main-div">
+              <div className="dot-1">
+                <p className="dot-1-p-contact">.</p>
+              </div>
+              <div className="section2-2-small-title-div">
+                <h6 className=" contactus-bulletpoint">
+                  Why Choose Us
+                </h6>
+              </div>
+            </div>
+          <h1 className='text-2xl font-bold '>Work with a Dedicated IT Solutions Company</h1>
           We are committed to guiding enterprises, from startups to
           corporations, towards a future defined by technological brilliance.
         </p>
+        <img
+          src={img2}
+          alt="Description"
+          className="next_image"
+          />
       </div>
+      </div>
+    </div>
 
-      <div className="progress-container">
+      {/* <div className="progress-container">
         <div className="progress-card p1">
           <CircularProgressBar percentage={progress1} />
         </div>
@@ -66,43 +103,49 @@ const Content = () => {
         <div className="progress-card p3">
           <CircularProgressBar percentage={progress3} />
         </div>
-      </div>
+      </div> */}
 
       {/* Container for social media links */}
       <div className="social-media-container">
         <div className="Mission">
-          <p>
-            <h1>Guiding Businesses Towards Digital Excellence</h1>At the core of
+          <p className='leading-5 line-height: 1.25rem; '>
+            <h1 className='text-2xl font-bold '>Guiding Businesses Towards Digital Excellence</h1><br></br>
+            <div className='text text-sm '>At the core of
             Money Ocean Information Technology Solutions lies an unwavering
             mission: to be the bedrock upon which businesses build their digital
-            success stories. We are committed to guiding enterprises, from
+            success stories<br></br><br></br>We are committed to guiding enterprises, from
             startups to corporations, towards a future defined by technological
-            brilliance.
+            brilliance.</div>
           </p>
-          <p>
+          <p className='text-sm'><br></br>
             By merging cutting-edge solutions with visionary strategies, we
             endeavor to empower our clients to conquer their challenges and
             capitalize on their opportunities, all while adhering to the highest
             standards of quality and dedication.
+            <br></br>
           </p>
         </div>
-        <div className="digital">
-          <p>
-            <h1>Pioneering a Digital Revolution</h1>
+        <div className="digital className='leading-9 line-height: 2.25rem;'">
+          <p className='leading-9 line-height: 2.25rem;' >
+            <h1 className='text-2xl font-bold leading-5'>Pioneering a Digital Revolution</h1>
+            <div className='text-sm'>
+              <br></br>
             Our vision extends far beyond conventional IT solutions. We’re
             driven by the desire to mold a digital landscape where technology
-            seamlessly intertwines with business aspirations. Money Ocean
+            seamlessly intertwines with business aspirations.<br></br><br></br> Money Ocean
             Information Technology Solutions envisions a world where innovation
-            isn’t just a possibility but a way of life. We aspire to be
+            isn’t just a possibility but a way of life.<br></br><br></br> We aspire to be
             trailblazers, redefining industries and pushing boundaries to set
-            new benchmarks for digital excellence on a global scale.
+            new benchmarks for digital excellence on a global scale.<br></br>
+            <br></br>
+            </div>
           </p>
-          <p>
+          <p  className='text-sm'>
             Join hands with Money Ocean Information Technology Solutions and
             embark on a transformative digital journey that redefines success.
             Let’s shape the future together!
           </p>
-          <p>
+          <p className='text-sm'>
             Contact us by click Free-A-Quote button to explore how our expertise
             can elevate your business to new heights.
           </p>
@@ -110,13 +153,7 @@ const Content = () => {
       </div>
       <div className="last-section">
         <div className="social-media">
-          <img
-            src={process.env.PUBLIC_URL + '/TAQNIYAH.svg'}
-            alt="Description"
-            className="foot_img"
-          />
-          <h2>Social Media</h2>
-          <p>Follow us on:</p>
+        <p>Follow us on:</p>
           <li>
             <a href="https://www.facebook.com" target="_blank">
               Facebook

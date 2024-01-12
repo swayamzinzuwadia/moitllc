@@ -1,11 +1,12 @@
 .footer-main {
-    flex-direction: row;
+    flex-direction: column;
     display: flex;
     width: 100%;
     align-self: center;
     /* margin: 20px; */
     background-color: transparent; /* Use RGBA with alpha channel for transparency */
     justify-content: center;
+    align-items: center;
     height: 5rem;
     border-top: 0.01px solid white;
     padding-left: 20px;
@@ -20,4 +21,8 @@
     /* margin: 15px; */
     padding: 10px;
     align-self: center;
+}
+
+.para-div{
+    max-width: 100%;
 }

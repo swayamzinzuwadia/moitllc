@@ -1,6 +1,7 @@
 import './App.css';
 import React from 'react';
 import AppRouter from './router';
+import Navbar from './components/navbar';
 // import { BrowserRouter } from 'react-router-dom';
 // import HomePage from './pages/homepage';
 
@@ -9,6 +10,7 @@ function App() {
     // <HomePage/>
       // <BrowserRouter>
         <AppRouter/>  
+        
       // </BrowserRouter>
   );
 }

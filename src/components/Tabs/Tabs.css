@@ -425,15 +425,14 @@
 
 } */
 
-@media screen and (max-width:1024px){
+/* @media screen and (max-width:1024px){
     #mobile-tabs{
-        /* visibility: visible; */
+        /* visibility: visible; 
         display: flex;
-        max-width: 80%;
+        max-width: 20%;
 
     }
     #laptop-tabs{
-        /* visibility: hidden; */
         display: none;
     }
     .tab{
@@ -460,13 +459,11 @@
 @media screen and (min-width:1025px) {
     
     #mobile-tabs{
-        /* visibility: hidden ; */
         display: none;
     }   
     #laptop-tabs{
-        /* visibility: visible; */
         display: flex;
     }
     
-}
+} */
 

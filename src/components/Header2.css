@@ -1,0 +1,61 @@
+
+   .text-center {
+    text-align: center;
+  }
+  .page-header {
+      background-image: url("../assets/bg-page-header.jpg");
+      width: 100%;
+      padding-top: 100px;
+      padding-bottom: 100px;
+      font-family: "Red Hat Display", sans-serif;
+      font-weight: 500;
+      background: center center no-repeat;
+      background-size: cover;
+      text-align: center;
+  }
+  .dcell {
+    display: table;
+    width: 100%;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    vertical-align: middle;
+    background: none;
+    position: relative;
+    overflow: hidden;
+}
+.container {
+  display: grid;
+  width: 100%;
+  text-align: center;
+  position: relative;
+  height: 200px;
+  color: #000000;
+  border-bottom: #ffffff;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.home-link {
+  text-decoration: none;
+  color: #000000;
+}
+.page-title {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.breadcrumbs {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.breadcrumbs li {
+  display: inline;
+  margin-right: 5px;
+}
+
+.breadcrumbs li a {
+  text-decoration: none;
+  color: #000000;
+}

@@ -20,18 +20,18 @@ const ContactForm = () => {
   }
 
   return (
-    <div className="w-full max-w-md mx-auto p-4 bg-white rounded shadow-md mt-5">
+    <div className="w-full max-w-md mx-auto p-4 bg-white rounded mt-5">
       <h2 className="text-md font-bold mb-4">GET IN TOUCH</h2>
       <h1 className="text-3xl font-bold mb-4">Ready to Get Started?</h1>
 
-      <form onSubmit={handleSubmit} className="flex flex-col space-y-4">
+      <form onSubmit={handleSubmit} className="flex flex-col space-y-6">
         <input
           type="text"
           name="name"
           value={formData.name}
           onChange={handleChange}
           placeholder="Your Name"
-          className="p-2 border rounded w-full"
+          className="p-2 border rounded-2xl shadow w-full"
         />
 
         <input
@@ -40,7 +40,7 @@ const ContactForm = () => {
           value={formData.email}
           onChange={handleChange}
           placeholder="Your Email"
-          className="p-2 border rounded w-full"
+          className="p-2 border rounded-2xl shadow w-full"
         />
 
         <input
@@ -49,7 +49,7 @@ const ContactForm = () => {
           value={formData.subject}
           onChange={handleChange}
           placeholder="Subject"
-          className="p-2 border rounded w-full"
+          className="p-2 border rounded-2xl shadow w-full"
         />
 
         <textarea
@@ -57,7 +57,7 @@ const ContactForm = () => {
           value={formData.message}
           onChange={handleChange}
           placeholder="Your Message"
-          className="p-2 border rounded w-full"
+          className="p-2 border rounded-2xl shadow w-full"
         />
 
         <button
