@@ -7,7 +7,7 @@ import img from '../assets/HEADER2.png'
 import img2 from '../assets/about-us.png'
 // import Header2 from '../components/Header2';
 import "../pages/contact.css";
-
+import Navbar2 from '../components/navbar2';
 const Content = () => {
   function goToHome() {
     console.log('Go to homeee')
@@ -17,6 +17,7 @@ const Content = () => {
   // const progress3 = 87
   return (
     <div className="content-container ">
+      <Navbar2/>
       <div className="content-head">
       <div className="heading-section">
           <p classname="heading-main-banner main-font">About Us</p>
@@ -34,8 +35,8 @@ const Content = () => {
           className="custom-image"
           />
         <p className='paragraph-imgsec'>
-          <h2 className=' text-4xl font-bold font-weight: 500;'>Welcome to Money Ocean Information Technology Solutions</h2> <br></br>
-          <div className='text-xs text-center justify-content: center max-width: 10rem;' >At
+          <p className=' font-bold welcome-text'>Welcome to Money Ocean Information Technology Solutions</p> <br></br>
+          <div className='welcome-subtext' >At
           Money Ocean Information Technology Solutions, we transcend technology
           to craft digital solutions that empower businesses for success in the
           modern digital landscape. Headquartered in the vibrant city of Dubai,
@@ -127,7 +128,7 @@ const Content = () => {
         </div>
         <div className="digital className='leading-9 line-height: 2.25rem;'">
           <p className='leading-9 line-height: 2.25rem;' >
-            <h1 className='text-2xl font-bold leading-5'>Pioneering a Digital Revolution</h1>
+            <h1 className='text-2xl font-bold leading-5 pioneering-text'>Pioneering a Digital Revolution</h1>
             <div className='text-sm'>
               <br></br>
             Our vision extends far beyond conventional IT solutions. We’re
