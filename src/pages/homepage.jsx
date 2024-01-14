@@ -6,7 +6,6 @@ import ContainerOutsideExample from "../components/navbar";
 import Footer from "../components/footer";
 import image1 from "../assets/homepage-1.png";
 import section2_image from "../assets/home-section3.png";
-import Typewriter from "typewriter-effect";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faChartPie,
@@ -46,21 +45,7 @@ const HomePage = () => {
                   CHANGE YOUR VIEW OF IT SOLUTIONS
                 </p>
                 <div className="typewriter">
-                  <Typewriter
-                    onInit={(typewriter) => {
-                      typewriter
-                        .typeString("Welcome...")
-                        .pauseFor(1000)
-                        .deleteAll()
-                        .typeString(
-                          "Unlocking Business Success with IT Solutions in Dubai"
-                        )
-                        .pauseFor(1000)
-                        // .deleteAll()
-                        .typeString("<br />At Money Ocean Information Technology")
-                        .start();
-                    }}
-                  />
+                  Unlocking Business Success with IT Solutions in Dubai
                 </div>
 
                 {/* <div className="unlocking-text-div">
