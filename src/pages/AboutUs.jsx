@@ -8,6 +8,10 @@ import img2 from '../assets/about-us.png'
 // import Header2 from '../components/Header2';
 import "../pages/contact.css";
 import Navbar2 from '../components/navbar2';
+import logo from "../assets/Moit-logo.png";
+import WhatsAppIcon from './whatsapp';
+import Onclick from './onclickform';
+
 const Content = () => {
   function goToHome() {
     console.log('Go to homeee')
@@ -70,7 +74,7 @@ const Content = () => {
       <div className="additional-text-submain">
 
       <div className="additional-text">
-        <p className='text-sm paragraph-additional-text'>
+        <p className='text-2xl-paragraph-additional-text'>
             <div className="section2-2-small-title-main-div">
               <div className="dot-1">
                 <p className="dot-1-p-contact">.</p>
@@ -111,14 +115,14 @@ const Content = () => {
         <div className="Mission">
           <p className='leading-5 line-height: 1.25rem; '>
             <h1 className='text-2xl font-bold '>Guiding Businesses Towards Digital Excellence</h1><br></br>
-            <div className='text text-sm '>At the core of
+            <div className='text text-xl '>At the core of
             Money Ocean Information Technology Solutions lies an unwavering
             mission: to be the bedrock upon which businesses build their digital
             success stories<br></br><br></br>We are committed to guiding enterprises, from
             startups to corporations, towards a future defined by technological
             brilliance.</div>
           </p>
-          <p className='text-sm'><br></br>
+          <p className='text-xl'><br></br>
             By merging cutting-edge solutions with visionary strategies, we
             endeavor to empower our clients to conquer their challenges and
             capitalize on their opportunities, all while adhering to the highest
@@ -128,8 +132,8 @@ const Content = () => {
         </div>
         <div className="digital className='leading-9 line-height: 2.25rem;'">
           <p className='leading-9 line-height: 2.25rem;' >
-            <h1 className='text-2xl font-bold leading-5 pioneering-text'>Pioneering a Digital Revolution</h1>
-            <div className='text-sm'>
+            <h1 className='text-2xl font-bold leading-5 pioneering-text'><br></br>Pioneering a Digital Revolution</h1>
+            <div className='text-xl'>
               <br></br>
             Our vision extends far beyond conventional IT solutions. We’re
             driven by the desire to mold a digital landscape where technology
@@ -141,20 +145,33 @@ const Content = () => {
             <br></br>
             </div>
           </p>
-          <p  className='text-sm'>
+          <p  className='text-xl'>
             Join hands with Money Ocean Information Technology Solutions and
             embark on a transformative digital journey that redefines success.
             Let’s shape the future together!
           </p>
-          <p className='text-sm'>
+          <p className='text-xl'>
             Contact us by click Free-A-Quote button to explore how our expertise
             can elevate your business to new heights.
           </p>
         </div>
       </div>
       <div className="last-section">
-        <div className="social-media">
-        <p>Follow us on:</p>
+      <div className='about-moit'>
+      <div className='moit-img'>
+        <img
+        src={logo}
+        alt="Description"
+        className='moit_img'
+        />
+      </div>
+        <p className='moit-para'>
+        At M.O.IT.we transcend technology to craft digital solutions that empower
+        businesses for success in the modern digital landscape.
+        </p>
+      </div>
+        <div className="social-media-about">
+        <p className='para'>Follow us on:</p>
           <li>
             <a href="https://www.facebook.com" target="_blank">
               Facebook
@@ -172,17 +189,6 @@ const Content = () => {
           </li>
         </div>
 
-        {/* Services Provided */}
-        <div className="services">
-          <h2>Our Services</h2>
-          <ul>
-            <li>Web Development</li>
-            <li>Software Development</li>
-            <li>Mobile App Development</li>
-            {/* Add more services as needed */}
-          </ul>
-        </div>
-
         {/* Contact Information */}
         <div className="contact-info">
           <h2>Contact Us</h2>
@@ -196,6 +202,15 @@ const Content = () => {
           <h2>Our Address</h2>
           <p>123 Main Street, Cityville, Country</p>
         </div>
+      </div>
+      <div className='whatsapp'>
+        <WhatsAppIcon/>
+      </div>
+      <div className='on-Click'>
+         <Onclick/>
+      </div>
+      <div className='copyright'>
+         <p>Copyright © 2024 M.O.I.T.L.L.C. . All Rights Reserved.</p> 
       </div>
     </div>
   )
