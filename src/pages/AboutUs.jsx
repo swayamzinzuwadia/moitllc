@@ -12,6 +12,7 @@ import logo from "../assets/Moit-logo.png";
 import WhatsAppIcon from './whatsapp';
 import Onclick from './onclickform';
 
+
 const Content = () => {
   function goToHome() {
     console.log('Go to homeee')
@@ -56,17 +57,21 @@ const Content = () => {
       {/* Three small cards */}
       <div className="card-container">
         <div className="card1">
-          <h4>Innovative Excellence</h4> Our skilled team is fueled by a passion
-          for innovation
+        <div className='number-box'>01</div>
+          <h5 className='service-box-title'>Innovative Excellence</h5> <p className='text-lg'><br></br>Our skilled team is fueled by a passion
+          for innovation</p>
         </div>
+        
         <div className="card2">
-          <h4>Customer First</h4>Our clients are at the heart of everything we
-          do.
+        <div className='number-box-2'>02</div>
+          <h5 className='service-box-title'>Customer First</h5> <p className='text-lg'><br></br>Our clients are at the heart of everything we
+          do.</p>
         </div>
         <div className="card3">
-          <h4>Tailored Solutions</h4>Best solution drive real growth and success
-          for client goals.
-        </div>
+        <div className='number-box-3'>03</div>
+          <h5 className='service-box-title'>Tailored Solutions</h5> <p className='text-lg'><br></br>Best solution drive real growth and success
+          for client goals.</p>
+          </div>
       </div>
 
       {/* Space for more text */}
@@ -74,16 +79,16 @@ const Content = () => {
       <div className="additional-text-submain">
 
       <div className="additional-text">
-        <p className='text-2xl-paragraph-additional-text'>
+        <p className='text-2xl paragraph-additional-text'>
             <div className="section2-2-small-title-main-div">
               <div className="dot-1">
                 <p className="dot-1-p-contact">.</p>
               </div>
-              <div className="section2-2-small-title-div">
-                <h6 className=" contactus-bulletpoint">
-                  Why Choose Us
-                </h6>
-              </div>
+                <div className="section2-2-small-title-div">
+                  <h6 className=" contactus-bulletpoint">
+                    Why Choose Us
+                  </h6>
+                </div>
             </div>
           <h1 className='text-2xl font-bold '>Work with a Dedicated IT Solutions Company</h1>
           We are committed to guiding enterprises, from startups to
@@ -98,6 +103,27 @@ const Content = () => {
       </div>
     </div>
 
+    <div className='progress-main'>
+      <div className='progress-sub-main'>
+      <div className='progress-container'>
+      <div className='title1'><p>Technical Powers</p></div>
+        <progress className='p1' value={90} max={100} />
+        <div className='progress-value'>{90}%</div>
+      </div>
+      <div className='progress-container'>
+      <div className='title2'><p>End to end services</p></div>
+        <progress className='p2' value={60} max={100} />
+        <div className='progress-value'>{60}%</div>
+      </div>
+      <div className='progress-container'>
+      <div className='title1'><p>Result oriented strategies</p></div>
+      <progress className='p3' value={75} max={100} />
+      <div className='progress-value'>{75}%</div>
+      </div>
+
+      </div>
+    </div>
+
       {/* <div className="progress-container">
         <div className="progress-card p1">
           <CircularProgressBar percentage={progress1} />
@@ -109,20 +135,32 @@ const Content = () => {
           <CircularProgressBar percentage={progress3} />
         </div>
       </div> */}
-
+      <div className='orange-card'>
+      <div className='card-body'>
+        <div className='card-part1'><li>Active Clients</li><p>330+</p></div>
+        <div className='card-part2'><li>Projects Done</li><p>850+</p></div>
+        <div className='card-part3'><li>Team Advisors</li><p>25+</p></div>
+        <div className='card-part4'><li>Glorious Years</li><p>10+</p></div>
+      </div>
+      </div>
       {/* Container for social media links */}
       <div className="social-media-container">
         <div className="Mission">
+        <div className="section2-2-small-title-div">
+                <h6 className=" contactus-bulletpoint">
+                  <li>Our Mission</li>
+                </h6>
+              </div>
           <p className='leading-5 line-height: 1.25rem; '>
             <h1 className='text-2xl font-bold '>Guiding Businesses Towards Digital Excellence</h1><br></br>
             <div className='text text-xl '>At the core of
             Money Ocean Information Technology Solutions lies an unwavering
             mission: to be the bedrock upon which businesses build their digital
-            success stories<br></br><br></br>We are committed to guiding enterprises, from
+            success stories We are committed to guiding enterprises, from
             startups to corporations, towards a future defined by technological
             brilliance.</div>
           </p>
-          <p className='text-xl'><br></br>
+          <p className='text-xl'>
             By merging cutting-edge solutions with visionary strategies, we
             endeavor to empower our clients to conquer their challenges and
             capitalize on their opportunities, all while adhering to the highest
@@ -131,28 +169,33 @@ const Content = () => {
           </p>
         </div>
         <div className="digital className='leading-9 line-height: 2.25rem;'">
+        <div className="section2-2-small-title-div">
+                <h6 className=" contactus-bulletpoint">
+                <br></br><br></br><br></br>
+                  <li>Our Vision</li>
+                </h6>
+              </div>
           <p className='leading-9 line-height: 2.25rem;' >
             <h1 className='text-2xl font-bold leading-5 pioneering-text'><br></br>Pioneering a Digital Revolution</h1>
             <div className='text-xl'>
               <br></br>
             Our vision extends far beyond conventional IT solutions. We’re
             driven by the desire to mold a digital landscape where technology
-            seamlessly intertwines with business aspirations.<br></br><br></br> Money Ocean
+            seamlessly intertwines with business aspirations. Money Ocean
             Information Technology Solutions envisions a world where innovation
-            isn’t just a possibility but a way of life.<br></br><br></br> We aspire to be
+            isn’t just a possibility but a way of life. We aspire to be
             trailblazers, redefining industries and pushing boundaries to set
-            new benchmarks for digital excellence on a global scale.<br></br>
-            <br></br>
+            new benchmarks for digital excellence on a global scale.<br></br><br></br>
             </div>
           </p>
           <p  className='text-xl'>
             Join hands with Money Ocean Information Technology Solutions and
             embark on a transformative digital journey that redefines success.
-            Let’s shape the future together!
+            Let’s shape the future together!<br></br><br></br>
           </p>
           <p className='text-xl'>
             Contact us by click Free-A-Quote button to explore how our expertise
-            can elevate your business to new heights.
+            can elevate your business to new heights.<br></br><bR></bR>
           </p>
         </div>
       </div>
@@ -210,7 +253,7 @@ const Content = () => {
          <Onclick/>
       </div>
       <div className='copyright'>
-         <p>Copyright © 2024 M.O.I.T.L.L.C. . All Rights Reserved.</p> 
+         <p>Copyright © 2023 Money Ocean Information Technology.LLC IT Solutions . All Rights Reserved.</p> 
       </div>
     </div>
   )
