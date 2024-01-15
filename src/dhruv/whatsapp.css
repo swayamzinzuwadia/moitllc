@@ -1,0 +1,9 @@
+/* WhatsAppIcon.css */
+
+.whatsapp-icon {
+    position: fixed;
+    bottom: 45px;
+    left: 20px;
+    cursor: pointer;
+  }
+  

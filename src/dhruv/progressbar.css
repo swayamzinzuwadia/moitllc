@@ -1,0 +1,12 @@
+.progress-bar-container {
+    position: relative;
+  }
+  
+  .label-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 5px; /* Adjust the padding as needed */
+    background-color: #ffffff; /* Optional: Add background color for better visibility */
+  }
+  
