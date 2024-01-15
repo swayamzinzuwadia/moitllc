@@ -124,5 +124,13 @@
     .contact-form-container{
       margin-top: 40%;
     }
+    .contact-sub-main{
+      display: flex;
+      flex-direction: flex-end;
+    }
+    .form-icon{
+      position: fixed;
   }
+  }
+
   
