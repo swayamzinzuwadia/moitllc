@@ -705,4 +705,17 @@ margin-right: 10%;
   background-image: url('../assets/bg-shape3-home6.png');
 }
 
-
+@media screen and (min-width:900px){
+  .progress-main{
+    max-width: 100%;
+    align-items: center;
+  }
+  .progress-sub-main{
+    align-items: center;
+  }
+  .progress-value{
+    position: absolute;
+    top: 0;
+    right: 5%;
+  }
+}
