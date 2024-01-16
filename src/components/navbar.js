@@ -9,7 +9,7 @@ const Navbar = ()=>{
     const [showMediaIcons, setShowMediaIcons]=useState(false);
     return(
         <nav className="main-nav">
-            <div className="logo">
+            <div className="logo-navbar">
             <img
             src={logo}
             alt="Description"

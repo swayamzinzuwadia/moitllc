@@ -7,7 +7,7 @@ const MapComponent = () => {
   const position = [25.271139, 55.309915]; // New coordinates for the specified address
 
   return (
-    <MapContainer center={position} zoom={15} style={{ height: '500px', width: '100%' }}>
+    <MapContainer center={position} zoom={15} style={{ height: '300px', width: '100%' }}>
       <TileLayer
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'

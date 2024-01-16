@@ -5,15 +5,21 @@
     background-color: transparent;
     z-index: 999;
     position: relative;
-    height: 5rem;
+    height: 10rem;
     border-bottom: 1px solid white;
 }
-.logo{
+.logo-navbar{
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
-    margin-left: 25px;
+    margin-left: 3.5rem;
+    min-width: 12rem;
+    height: fit-content;
     /* padding: 15px; */
+}
+.head_img{
+    display: flex;
+    max-width: 10rem;
 }
 .menu{
     /* grid-column: 3/4; */
@@ -118,9 +124,18 @@
         display: none;
     }
 
-    .logo,
+    .logo-navbar,
     .social-media ul{
         height: 7rem;
+    }
+    .logo-navbar{
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-left: 3.5rem;
+        min-width: 12rem;
+        height: fit-content;
+        /* padding: 15px; */
     }
 
     .mobile-menu-link{

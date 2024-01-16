@@ -44,15 +44,15 @@ const HomePage = () => {
                 <p className=" p-section1-part1">
                   CHANGE YOUR VIEW OF IT SOLUTIONS
                 </p>
-                <div className="typewriter">
+                {/* <div className="typewriter">
                   Unlocking Business Success with IT Solutions in Dubai
-                </div>
+                </div> */}
 
-                {/* <div className="unlocking-text-div">
+                <div className="unlocking-text-div">
                         <p className='unlocking-text'>Unlocking Business Success with IT Solutions in Dubai</p>
                       </div>
 
-                      <p className='p-section1-part2'>Enhance your company’s efficiency and growth with top-notch IT solutions in Dubai.</p> */}
+                      <p className='p-section1-part2'>Enhance your company’s efficiency and growth with top-notch IT solutions in Dubai.</p>
               </div>
             </div>
           </div>
@@ -326,7 +326,7 @@ const HomePage = () => {
 
           <section id="footer">
             <div className="footer">
-              <Footer/>
+              {/* <Footer/> */}
               {/* <p className="footer-text">Copyright © 2023 Money Ocean Information Technology.LLC IT Solutions . All Rights Reserved.</p>*/}
             </div>
           </section>

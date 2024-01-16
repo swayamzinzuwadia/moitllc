@@ -431,9 +431,9 @@
 
 } */
 
-/* @media screen and (max-width:1024px){
+@media screen and (max-width:1024px){
     #mobile-tabs{
-        /* visibility: visible; 
+        /* visibility: visible;*/ 
         display: flex;
         max-width: 20%;
 
@@ -442,7 +442,11 @@
         display: none;
     }
     .tab{
-        position: relative;
+        /* position: relative; */
+        display: flex !important;
+        justify-content: center;
+        align-items: center;
+        
     }
     
 }
@@ -471,5 +475,8 @@
         display: flex;
     }
     
-} */
+}
 
+.slick-slider.slick-initialized {
+    min-width: 10rem;
+}

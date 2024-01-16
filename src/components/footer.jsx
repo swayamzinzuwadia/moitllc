@@ -15,8 +15,8 @@ function Footer() {
         />
       </div>
         <p className='moit-para'>
-        At M.O.IT.we transcend technology to craft digital solutions that empower
-        businesses for success in the modern digital landscape.
+          At M.O.IT.we transcend technology to craft digital solutions that empower
+          businesses for success in the modern digital landscape.
         </p>
       </div>
         <div className="social-media-about">

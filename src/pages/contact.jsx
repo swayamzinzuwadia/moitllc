@@ -10,6 +10,7 @@ import ContactForm from '../components/ContactForm'
 import Navbar2 from '../components/navbar2';
 import Footer from '../components/footer'
 import MapComponent from '../components/Map'
+import { useNavigate } from 'react-router'
 
 // const info = [
 //   {
@@ -20,8 +21,9 @@ import MapComponent from '../components/Map'
 // ]
 
 function Contact() {
+  const navigate = useNavigate();
   function goToHome() {
-    console.log('Go to homeee')
+    navigate("/");
   }
   return (
     <div className="contact-main">
@@ -114,15 +116,15 @@ function Contact() {
             </div>
           </div>
         </div>
-            <div className="map-main">
-              <div className="map-submain">
-                <MapComponent/>
-              </div>
-            </div>
+        <div className="map-main">
+          <div className="map-submain">
+            <MapComponent/>
+          </div>
+        </div>
         <hr className='hr-contact'/>
         <div className='footer-contact'>
             <Footer/>
-            <p className="footer-text">Copyright © 2023 Money Ocean Information Technology.LLC IT Solutions . All Rights Reserved.</p>
+            {/* <p className="footer-text">Copyright © 2023 Money Ocean Information Technology.LLC IT Solutions . All Rights Reserved.</p> */}
         </div>
       </div>
       {/* <Map /> */}
