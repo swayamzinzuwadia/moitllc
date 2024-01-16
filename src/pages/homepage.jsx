@@ -327,7 +327,7 @@ const HomePage = () => {
           <section id="footer">
             <div className="footer">
               <Footer/>
-              <p className="footer-text">Copyright © 2023 Money Ocean Information Technology.LLC IT Solutions . All Rights Reserved.</p>         
+              {/* <p className="footer-text">Copyright © 2023 Money Ocean Information Technology.LLC IT Solutions . All Rights Reserved.</p>*/}
             </div>
           </section>
 

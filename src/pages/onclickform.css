@@ -122,7 +122,8 @@
         margin-top: 40%;
     }
     .contact-form-container{
-      margin-top: 40%;
+      display: none
+      ;
     }
     .contact-sub-main{
       display: flex;
@@ -130,6 +131,7 @@
     }
     .form-icon{
       position: fixed;
+      right:40;
   }
   }
 

@@ -5,15 +5,16 @@
     background-color: transparent;
     z-index: 999;
     position: relative;
-    height: 5rem;
+    height: 7.5rem;
     border-bottom: 1px solid white;
 }
 .logo-2{
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
-    margin-left: 25px;
-    /* padding: 15px; */
+    margin-left: 2rem;
+    width: 9rem;
+
 }
 .menu-2{
     /* grid-column: 3/4; */
@@ -41,7 +42,7 @@
     position: relative;
     color: black;
     font-weight: 700;
-    font-size: 25px;
+    font-size: 18px;
     overflow: hidden;
     font-family: 'PlayFair Display';
 }
@@ -195,9 +196,7 @@
         height: 6rem;
         grid-template-columns: 1rem 1fr 2fr 1fr 1rem;
     }
-    .heading-section{
-        margin-top: 2rem;
-    }
+   
 }
 
 

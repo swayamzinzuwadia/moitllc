@@ -3,14 +3,19 @@ import React, { useState} from 'react';
 import { CiMenuBurger } from 'react-icons/ci';
 import './navbar2.css';
 import logo from "../assets/MOIT-01.png";
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 const Navbar = ()=>{
     const [showMediaIcons, setShowMediaIcons]=useState(false);
+    const navigate = useNavigate();
+    function goHome(){
+        navigate('/');
+    }
     return(
-        <nav className="main-nav">
-            <div className="logo">
+        <nav className="main-nav-2">
+            <div className="logo-2">
             <img
+            onClick={goHome}
             src={logo}
             alt="Description"
             className='head_img'

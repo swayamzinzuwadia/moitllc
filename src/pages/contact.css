@@ -4,33 +4,42 @@
 .heading-section{
     background-image: url("../assets/bg-page-header.jpg");
     min-width: 100%;
-    height: 20vh;
+    height: 40vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-size: contain;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-weight: 900;
 }
-.heading-main-banner .main-font{
-    font-weight: 900 !important;
+.heading{
+    font-weight: 900;
 
+}
+
+.home-link{
+    font-weight: 300;
+}
+.home-text{
+    color: #0039e4 !important;
 }
 
 /* Contact Page whole layout */
 .contact-main{
     display: flex;
     flex-direction: column;
-    /* justify-content: flex-start; */
-    /* align-items: center; */
-    height: 350vh;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: auto;
 }
 
 .contact-submain{
     min-width: 100%;
-    height: 250vh;
+    /* height: 250vh; */
     display: flex;
-    justify-content: center;
-    align-items: center;
+    /* justify-content: center; */
+    /* align-items: center; */
     flex-direction: column;
 }
 .heading-main-banner{
@@ -67,6 +76,7 @@
     min-width: 20%;
     max-width: 40%;
 }
+
 
 .blue-div-submain{
     width: 90%;
@@ -150,13 +160,39 @@
 }   
 
 .footer-contact{
-    bottom: 0%;
+    margin-top: 2rem;
     min-width: 100%;
     border-top: 10px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    height: auto;
 }
 
 .footer-text{
     color: black;
     text-align: center;
     justify-content: center;
+} 
+
+.map-main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
 }
+
+.map-submain{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 80%;
+    min-width: 80%;
+}
+
+
+
+
+

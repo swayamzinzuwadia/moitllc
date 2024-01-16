@@ -88,7 +88,7 @@ body {
 /* YourComponent.css */
 
 .progress-main {
-  width: 100%;
+  max-width: 10rem;
   margin-top:3%;
 }
 
@@ -97,6 +97,7 @@ body {
   flex-direction: column;
   gap: 30px;
   margin-left: 20%;
+  max-width: 100%;
 }
 
 .progress-container {
@@ -256,7 +257,7 @@ body {
     align-items: flex-start;
     margin-top: 0%;
     height: 100%;
-    max-width:100%;
+    
   }
   .additional-text-submain
 {
@@ -268,7 +269,7 @@ body {
     justify-content: center;
     align-items: flex-start;
     height: 30%;
-    max-width:10%;
+    max-width:100%;
 }
 .progress-container{
   margin-top: 3%;
@@ -493,6 +494,11 @@ body {
   .card3 {
       flex: 0 0 calc(33.33% - 20px);
   }
+  .content-container{
+    overflow-x: hidden;
+    max-width: 100%;
+  }
+  
 }
 
 @media screen and (min-width: 1200px) {
@@ -537,7 +543,7 @@ body {
     justify-content: center;
     align-items: flex-start;
     height: 30%;
-    max-width:10%;
+    max-width:100%;
 }
 .progress-container{
   margin-top: 3%;
@@ -549,6 +555,7 @@ body {
   right: 30%;
   bottom: 90%;
 }
+
 }
 
 

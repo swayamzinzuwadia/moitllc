@@ -9,7 +9,7 @@ import './homepage.css'
 import ContactForm from '../components/ContactForm'
 import Navbar2 from '../components/navbar2';
 import Footer from '../components/footer'
-// import Map from '../components/Map'
+import MapComponent from '../components/Map'
 
 // const info = [
 //   {
@@ -25,16 +25,16 @@ function Contact() {
   }
   return (
     <div className="contact-main">
-      <div className="contact-submain">
         <div className="navbar w-full">
               <Navbar2/>
           </div>
         <div className="heading-section">
-          <p classname="heading-main-banner main-font">Contact Us</p>
+          <p classname="heading">Contact Us</p>
           <p className="home-link" onClick={goToHome}>
-            Home &gt; Contact Us
+            <a href='/' onClick={goToHome} className='home-text'>Home</a> &gt; Contact Us
           </p>
         </div>
+      <div className="contact-submain">
         <div className="main-section mt-10 h-fit">
           <div className="submain-section1">
             <div className="blue-div-main h-fit">
@@ -114,9 +114,15 @@ function Contact() {
             </div>
           </div>
         </div>
+            <div className="map-main">
+              <div className="map-submain">
+                <MapComponent/>
+              </div>
+            </div>
         <hr className='hr-contact'/>
         <div className='footer-contact'>
             <Footer/>
+            <p className="footer-text">Copyright © 2023 Money Ocean Information Technology.LLC IT Solutions . All Rights Reserved.</p>
         </div>
       </div>
       {/* <Map /> */}

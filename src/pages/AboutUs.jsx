@@ -9,8 +9,8 @@ import img2 from '../assets/about-us.png'
 import "../pages/contact.css";
 import Navbar2 from '../components/navbar2';
 import logo from "../assets/Moit-logo.png";
-import WhatsAppIcon from './whatsapp';
-import Onclick from './onclickform';
+// import WhatsAppIcon from './whatsapp';
+// import Onclick from './onclickform';
 
 
 const Content = () => {
@@ -247,10 +247,10 @@ const Content = () => {
         </div>
       </div>
       <div className='whatsapp'>
-        <WhatsAppIcon/>
+        {/* <WhatsAppIcon/> */}
       </div>
       <div className='on-Click'>
-         <Onclick/>
+         {/* <Onclick/> */}
       </div>
       <div className='copyright'>
          <p>Copyright © 2023 Money Ocean Information Technology.LLC IT Solutions . All Rights Reserved.</p> 

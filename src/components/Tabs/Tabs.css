@@ -319,6 +319,12 @@
 
 }   
 
+@media screen and (min-width:1200px) {
+    #laptop-tabs{
+        max-width: 80%;
+    }
+}
+
 
 /* TAB3
 .tab3-paragraph-div{
