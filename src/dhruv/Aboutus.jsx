@@ -2,10 +2,8 @@
 // Content.js
 import React from 'react';
 import './Content.css';
-// import CircularProgressBar from '../components/circular-progress-bar'
 import img from '../assets/HEADER2.png'
 import img2 from '../assets/about-us.png'
-// import Header2 from '../components/Header2';
 import "../pages/contact.css";
 import Navbar2 from '../components/navbar2';
 import logo from "../assets/Moit-logo.png";
@@ -21,6 +19,8 @@ const Content = () => {
   // const progress2 = 80
   // const progress3 = 87
   return (
+    <div className='imp'>
+      
     <div className="content-container ">
       <Navbar2/>
       <div className="content-head">
@@ -31,6 +31,7 @@ const Content = () => {
           </p>
         </div>
       </div>
+      <div className='imp-sub'>
       <div className="image-section-main">
 
       <div className="image-section">
@@ -120,7 +121,6 @@ const Content = () => {
       <progress className='p3' value={75} max={100} />
       <div className='progress-value'>{75}%</div>
       </div>
-
       </div>
     </div>
 
@@ -199,6 +199,7 @@ const Content = () => {
           </p>
         </div>
       </div>
+      </div>
       <div className="last-section">
       <div className='about-moit'>
       <div className='moit-img'>
@@ -246,6 +247,7 @@ const Content = () => {
           <p>123 Main Street, Cityville, Country</p>
         </div>
       </div>
+      
       <div className='whatsapp'>
         <WhatsAppIcon/>
       </div>
@@ -255,6 +257,8 @@ const Content = () => {
       <div className='copyright'>
          <p>Copyright © 2023 Money Ocean Information Technology.LLC IT Solutions . All Rights Reserved.</p> 
       </div>
+    </div>
+    
     </div>
   )
 }
