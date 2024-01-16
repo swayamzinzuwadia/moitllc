@@ -1,13 +1,17 @@
+/* eslint-disable react/jsx-no-target-blank */
+// Content.js
 import React from 'react';
 import './Content.css';
+// import CircularProgressBar from '../components/circular-progress-bar'
 import img from '../assets/HEADER2.png'
 import img2 from '../assets/about-us.png'
+// import Header2 from '../components/Header2';
 import "../pages/contact.css";
 import Navbar2 from '../components/navbar2';
 import logo from "../assets/Moit-logo.png";
-import WhatsAppIcon from './whatsapp';
-import Onclick from './onclickform';
-import Footer2 from './footer2';
+// import WhatsAppIcon from './whatsapp';
+// import Onclick from './onclickform';
+
 
 const Content = () => {
   function goToHome() {
@@ -17,8 +21,6 @@ const Content = () => {
   // const progress2 = 80
   // const progress3 = 87
   return (
-    <div className='imp'>
-      
     <div className="content-container ">
       <Navbar2/>
       <div className="content-head">
@@ -29,7 +31,6 @@ const Content = () => {
           </p>
         </div>
       </div>
-      <div className='imp-sub'>
       <div className="image-section-main">
 
       <div className="image-section">
@@ -119,6 +120,7 @@ const Content = () => {
       <progress className='p3' value={75} max={100} />
       <div className='progress-value'>{75}%</div>
       </div>
+
       </div>
     </div>
 
@@ -197,22 +199,62 @@ const Content = () => {
           </p>
         </div>
       </div>
+      <div className="last-section">
+      <div className='about-moit'>
+      <div className='moit-img'>
+        <img
+        src={logo}
+        alt="Description"
+        className='moit_img'
+        />
       </div>
-      <div className='footer2'>
-        <Footer2/>
+        <p className='moit-para'>
+        At M.O.IT.we transcend technology to craft digital solutions that empower
+        businesses for success in the modern digital landscape.
+        </p>
       </div>
-      
+        <div className="social-media-about">
+        <p className='para'>Follow us on:</p>
+          <li>
+            <a href="https://www.facebook.com" target="_blank">
+              Facebook
+            </a>
+          </li>
+          <li>
+            <a href="https://www.twitter.com" target="_blank">
+              Twitter
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com" target="_blank">
+              Instagram
+            </a>
+          </li>
+        </div>
+
+        {/* Contact Information */}
+        <div className="contact-info">
+          <h2>Contact Us</h2>
+          <p>Phone: +1 123-456-7890</p>
+          <p>Email: info@taqniyah.com</p>
+          {/* Add more contact information as needed */}
+        </div>
+
+        {/* Address */}
+        <div className="address">
+          <h2>Our Address</h2>
+          <p>123 Main Street, Cityville, Country</p>
+        </div>
+      </div>
       <div className='whatsapp'>
-        <WhatsAppIcon/>
+        {/* <WhatsAppIcon/> */}
       </div>
       <div className='on-Click'>
-         <Onclick/>
+         {/* <Onclick/> */}
       </div>
       <div className='copyright'>
          <p>Copyright © 2023 Money Ocean Information Technology.LLC IT Solutions . All Rights Reserved.</p> 
       </div>
-    </div>
-    
     </div>
   )
 }

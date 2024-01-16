@@ -8,7 +8,7 @@ import './homepage.css'
 // import { Form } from 'react-router-dom'
 import ContactForm from '../components/ContactForm'
 import Navbar2 from '../components/navbar2';
-import Footer from '../components/footer'
+import Footer2 from '../components/footer2'
 import MapComponent from '../components/Map'
 import { useNavigate } from 'react-router'
 
@@ -122,9 +122,14 @@ function Contact() {
           </div>
         </div>
         <hr className='hr-contact'/>
-        <div className='footer-contact'>
-            {/* <Footer/> */}
+        <div className='footer-main-contact'>
             {/* <p className="footer-text">Copyright © 2023 Money Ocean Information Technology.LLC IT Solutions . All Rights Reserved.</p> */}
+          <div className="footer-submain-contact">
+            <Footer2/>
+
+          </div>
+        
+        
         </div>
       </div>
       {/* <Map /> */}

@@ -1,25 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant&family=Playfair+Display&family=Raleway&display=swap');
 body {
   margin: 0;
   padding: 0;
 }
-.imp-sub{
-margin-left: 10%;
-margin-right: 10%;
-  
-}
+
 .content-container {
-  margin-top: 5%;
+  /* margin-top: 5%; */
   padding: 20px;
   background: #ffffff;
 }
 
 .paragraph-imgsec{
   max-width: 80%;
-}
-.heading-main-banner{
-  font-size: 3rem;
-  font-family: 'Raleway',sans-serif;
 }
 
 
@@ -77,7 +68,6 @@ margin-right: 10%;
   align-items: center;
   height: 40vh;
   max-width:100%;
-  margin-top: 5%;
 }
 .additional-text-submain
 {
@@ -85,30 +75,29 @@ margin-right: 10%;
   justify-content: center;
   align-items: center;
   height: 90%;
-  max-width:100%;
+  max-width:60%;
 }
 .paragraph-additional-text{
   max-width: 50%;
 }
 .contactus-bulletpoint{
-  color:#bbb6b6;
-  font-size: 1rem;
+  color:#bbb6b6
 }
 /* YourComponent.css */
 
 /* YourComponent.css */
 
 .progress-main {
-  width: 90%;
-  margin-top:5%;
-  margin-left: 2%;
+  max-width: 10rem;
+  margin-top:3%;
 }
 
 .progress-sub-main {
   display: flex;
   flex-direction: column;
   gap: 30px;
-  width: 100%;
+  margin-left: 20%;
+  max-width: 100%;
 }
 
 .progress-container {
@@ -268,7 +257,7 @@ margin-right: 10%;
     align-items: flex-start;
     margin-top: 0%;
     height: 100%;
-    max-width:100%;
+    
   }
   .additional-text-submain
 {
@@ -279,11 +268,8 @@ margin-right: 10%;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+    height: 30%;
     max-width:100%;
-}
-.progress-sub-main{
-  width:18rem;
-  margin-left: 2%;
 }
 .progress-container{
   margin-top: 3%;
@@ -305,11 +291,9 @@ margin-right: 10%;
   align-items: center;
 }
 .card-body{
-  width: 100%;
-  display: flex;
-  margin-right: 20%;
-  justify-content: flex-start;
+  display: inline;
   align-items: center;
+  justify-content: center;
 }
 }
 
@@ -357,17 +341,17 @@ margin-right: 10%;
   bottom: 90%;
 }
 .orange-card{
-  max-width: 100%;
+  width: 100%;
   display: flex;
-  min-height: 600px;
+  margin-left: 0;
+  min-height: 500px;
   flex-direction: row;
-  justify-content:center;
+  justify-content: flex-start;
   align-items: center;
+  padding-left: 200px;
 }
 .card-body{
   display: inline;
-  align-items: center;
-  margin-left: 25%;
 }
 }
 
@@ -377,18 +361,8 @@ margin-right: 10%;
   box-shadow: none; /* Remove box-shadow on smaller screens */
 }
 
-.bg-overlay-main{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.bg-overlay-submain{
-  background: #f0f6ff;
-}
-
-
 .card-container {
+  background: #f0f6ff;
   overflow: hidden;
   display: flex;
   flex-wrap: wrap;
@@ -520,6 +494,11 @@ margin-right: 10%;
   .card3 {
       flex: 0 0 calc(33.33% - 20px);
   }
+  .content-container{
+    overflow-x: hidden;
+    max-width: 100%;
+  }
+  
 }
 
 @media screen and (min-width: 1200px) {
@@ -564,7 +543,7 @@ margin-right: 10%;
     justify-content: center;
     align-items: flex-start;
     height: 30%;
-    max-width:10%;
+    max-width:100%;
 }
 .progress-container{
   margin-top: 3%;
@@ -576,6 +555,7 @@ margin-right: 10%;
   right: 30%;
   bottom: 90%;
 }
+
 }
 
 
@@ -593,10 +573,6 @@ margin-right: 10%;
   padding: 20px;
   font-size: larger;
   text-align: justify;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
 }
 
 .last-section {
@@ -725,32 +701,4 @@ margin-right: 10%;
   background-image: url('../assets/bg-shape3-home6.png');
 }
 
-@media screen and (min-width:900px){
-  .progress-main{
-    max-width: 100%;
-    align-items: center;
-  }
-  .progress-sub-main{
-    align-items: center;
-  }
-  .progress-value{
-    position: absolute;
-    top: 0;
-    right: 5%;
-  }
-}
 
-
-
-.Mission{
-  max-width: 80%;
-  display: flex;
-  align-items: center;
-  justify-content: center ;
-  flex-direction: column;
-  align-self: center;
-}
-
-.section2-2-small-title-div-mission{
-  justify-self: flex-start;
-}

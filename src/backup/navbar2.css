@@ -1,28 +1,20 @@
-.main-nav {
+.main-nav-2{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #fff;
+    background-color: transparent;
     z-index: 999;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    height: 10rem;
-    border-bottom: 1px solid black;
-    opacity: 100;
-    transition: opacity 0.3s ease;
-  }
-  
-  .main-nav.scrolled {
-    opacity: 100;
-  }
-
+    position: relative;
+    height: 7.5rem;
+    border-bottom: 1px solid white;
+}
 .logo-2{
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
-    margin-left: 25px;
-    /* padding: 15px; */
+    margin-left: 2rem;
+    width: 9rem;
+
 }
 .menu-2{
     /* grid-column: 3/4; */
@@ -48,7 +40,7 @@
 }
 .menu-2 li {
     position: relative;
-    color: rgb(0, 0, 0);
+    color: black;
     font-weight: 700;
     font-size: 18px;
     overflow: hidden;
@@ -104,9 +96,9 @@
     margin-right: 25px;
     color: black;
 }
-@media (max-width: 1200px){
+@media (max-width: 1080px){
   .main-nav{
-    height: 8rem;
+    height: 2rem;
     grid-template-columns: 2rem 2fr 3fr 2rem 2rem;
 }
 
@@ -117,7 +109,7 @@
 }
 }
 
-@media(max-width: 600px){
+@media(max-width: 998px){
     .main-nav{
         height: 2rem;
         grid-template-columns: 2rem 2fr 3fr 2rem 2rem;
@@ -198,44 +190,13 @@
       
 }
 
-@media(max-width: 600px){
-    .main-nav {
+@media(max-width: 650px){
+    .main-nav{
         min-width: 100%;
-        min-height: 6rem;
-        grid-template-columns: 1rem 2fr 2fr 1fr 1rem;
-      }
-      
-      .mobile-menu-link-2 {
-        position: fixed;
-        top: 0;
-        left: 100%; /* Start off-screen to the right */
-        width: 300px; /* Set a fixed width */
-        height: 100%;
-        background-color: rgb(255, 255, 255); /* Set your desired background color */
-        z-index: -1000;
-        padding-left: 40px;
-        display: flex;
-        align-items:flex-start;
-        justify-content: left;
-        flex-direction: row;
-        margin-top: 10%;
-        transition: left 0.3s ease; /* Add a smooth transition effect */
-      }
-      
-      .mobile-menu-link-2.open {
-        left: 25%; /* Slide in to 30% of the screen width */
-        margin-top: 10%;
-      }
-      
-      .mobile-menu-link-2 ul {
-        max-width: 100%;
-        height: auto;
-        padding-top: 80px;
-      }
-      
-      .mobile-menu-link-2 ul li {
-        margin-bottom: 50px; /* Adjust spacing between menu items */
-        color: black;
-        text-decoration: underline;
-      }
+        height: 6rem;
+        grid-template-columns: 1rem 1fr 2fr 1fr 1rem;
     }
+   
+}
+
+
