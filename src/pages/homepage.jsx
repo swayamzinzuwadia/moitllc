@@ -2,8 +2,8 @@
 import { React} from "react";
 import "./homepage.css";
 // import './tailwind.css';
-import ContainerOutsideExample from "../components/navbar";
-import Footer from "../components/footer";
+import Navbar from "../components/navbar";
+import Footer2 from "../components/footer2";
 import image1 from "../assets/homepage-1.png";
 import section2_image from "../assets/home-section3.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -34,7 +34,7 @@ const HomePage = () => {
       <div className="main-div">
         <section id="section1" className="section1 ">
           <div className="section1-main2-div">
-            <ContainerOutsideExample />
+            <Navbar />
             <div className="section1-main3-div ">
               <div className=" img-div ">
                 <img src={image1} className="it-home-pic" alt="IT pic" />
@@ -326,7 +326,7 @@ const HomePage = () => {
 
           <section id="footer">
             <div className="footer">
-              {/* <Footer/> */}
+              <Footer2/>
               {/* <p className="footer-text">Copyright © 2023 Money Ocean Information Technology.LLC IT Solutions . All Rights Reserved.</p>*/}
             </div>
           </section>
