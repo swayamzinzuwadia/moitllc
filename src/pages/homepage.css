@@ -149,10 +149,22 @@
   .p-section1-part1{
     text-align: center;
   }
+  .p-section1-part2{
+    text-align: center;
+  }
   .it-home-pic{
     width: 1010vh;
 
   }
+  .unlocking-text{
+    color: white;
+    font-size: 2rem;
+    align-self: center;
+    font-weight: bolder;
+    justify-content: center;
+    text-align: center;
+  }
+  
   .img-div{
     min-width: 90%;
     align-items: center;
@@ -168,7 +180,7 @@
     margin-left: 0rem;
     
     align-items: center;
-    /* justify-content: center; */
+    justify-content: center;
   }
   
   .section1-main2-div{

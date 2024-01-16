@@ -31,7 +31,7 @@ function Contact() {
               <Navbar2/>
           </div>
         <div className="heading-section">
-          <p classname="heading">Contact Us</p>
+          <p className="heading">Contact Us</p>
           <p className="home-link" onClick={goToHome}>
             <a href='/' onClick={goToHome} className='home-text'>Home</a> &gt; Contact Us
           </p>
@@ -123,7 +123,7 @@ function Contact() {
         </div>
         <hr className='hr-contact'/>
         <div className='footer-contact'>
-            <Footer/>
+            {/* <Footer/> */}
             {/* <p className="footer-text">Copyright © 2023 Money Ocean Information Technology.LLC IT Solutions . All Rights Reserved.</p> */}
         </div>
       </div>

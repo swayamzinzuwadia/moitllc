@@ -210,6 +210,19 @@
         height: 6rem;
         grid-template-columns: 1rem 1fr 2fr 1fr 1rem;
     }
+    .logo-navbar{
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-left: 3.5rem;
+        min-width: 10rem;
+        height: fit-content;
+        /* padding: 15px; */
+    }
+    .head_img{
+        display: flex;
+        max-width: 7rem;
+    }
 }
 
 
