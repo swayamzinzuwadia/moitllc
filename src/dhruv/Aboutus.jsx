@@ -1,5 +1,3 @@
-/* eslint-disable react/jsx-no-target-blank */
-// Content.js
 import React from 'react';
 import './Content.css';
 import img from '../assets/HEADER2.png'
@@ -9,7 +7,7 @@ import Navbar2 from '../components/navbar2';
 import logo from "../assets/Moit-logo.png";
 import WhatsAppIcon from './whatsapp';
 import Onclick from './onclickform';
-
+import Footer2 from './footer2';
 
 const Content = () => {
   function goToHome() {
@@ -200,52 +198,8 @@ const Content = () => {
         </div>
       </div>
       </div>
-      <div className="last-section">
-      <div className='about-moit'>
-      <div className='moit-img'>
-        <img
-        src={logo}
-        alt="Description"
-        className='moit_img'
-        />
-      </div>
-        <p className='moit-para'>
-        At M.O.IT.we transcend technology to craft digital solutions that empower
-        businesses for success in the modern digital landscape.
-        </p>
-      </div>
-        <div className="social-media-about">
-        <p className='para'>Follow us on:</p>
-          <li>
-            <a href="https://www.facebook.com" target="_blank">
-              Facebook
-            </a>
-          </li>
-          <li>
-            <a href="https://www.twitter.com" target="_blank">
-              Twitter
-            </a>
-          </li>
-          <li>
-            <a href="https://www.instagram.com" target="_blank">
-              Instagram
-            </a>
-          </li>
-        </div>
-
-        {/* Contact Information */}
-        <div className="contact-info">
-          <h2>Contact Us</h2>
-          <p>Phone: +1 123-456-7890</p>
-          <p>Email: info@taqniyah.com</p>
-          {/* Add more contact information as needed */}
-        </div>
-
-        {/* Address */}
-        <div className="address">
-          <h2>Our Address</h2>
-          <p>123 Main Street, Cityville, Country</p>
-        </div>
+      <div className='footer2'>
+        <Footer2/>
       </div>
       
       <div className='whatsapp'>
