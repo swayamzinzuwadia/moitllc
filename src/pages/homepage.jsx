@@ -32,9 +32,9 @@ const HomePage = () => {
   return (
     <>
       <div className="main-div">
+            <Navbar />
         <section id="section1" className="section1 ">
           <div className="section1-main2-div">
-            <Navbar />
             <div className="section1-main3-div ">
               <div className=" img-div ">
                 <img src={image1} className="it-home-pic" alt="IT pic" />
