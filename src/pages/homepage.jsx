@@ -90,7 +90,7 @@ const HomePage = () => {
                     <h3 className="card-headers">Expertise</h3>
                     <p className="card-paragraphs">
                       One size does not fit all in the world of IT solutions,
-                      and that's where Money Ocean Information Technology excels
+                      and that's where Money Ocean excels
                     </p>
                   </div>
                   <div className="card">
@@ -101,7 +101,7 @@ const HomePage = () => {
                     <h3 className="card-headers">Solution</h3>
                     <p className="card-paragraphs">
                       One size does not fit all in the world of IT solutions,
-                      and that's where Money Ocean Information Technology excels.
+                      and that's where Money Ocean excels.
                     </p>
                   </div>
                   <div className="card">
@@ -111,7 +111,7 @@ const HomePage = () => {
                     />
                     <h3 className="card-headers">Customer Approach</h3>
                     <p className="card-paragraphs">
-                      Choosing Money Ocean Information Technology means choosing a partner that puts your
+                      Choosing Money Ocean means choosing a partner that puts your
                       vision at the forefront.
                     </p>
                   </div>
@@ -183,7 +183,7 @@ const HomePage = () => {
                   </div>
                   <div className="section2-2-para-div">
                     <p className="section2-2-para1">
-                      At Money Ocean Information Technology IT Solutions, we are your trusted partner in
+                      At Money Ocean Information Technology, we are your trusted partner in
                       providing cutting-edge IT solutions tailored to meet the
                       unique needs of businesses in Dubai and beyond.
                     </p>
@@ -315,7 +315,7 @@ const HomePage = () => {
                       <h4 className="section2-2-title">
                         Benefits of Having Best IT Solutions
                       </h4>
-                      <p className=" section4-para">Money Ocean Information Technology stands out as an IT partner with a track record of excellence. With over a decade of experience, their team of highly trained professionals is equipped to handle diverse IT challenges. Money Ocean Information Technology’s dedication to customer satisfaction is evident in their client success stories. They hold industry awards, certifications, and specializations that underscore their expertise. Money Ocean Information Technology’s holistic approach ensures that your IT needs are not just met, but exceeded.</p>
+                      <p className=" section4-para">Money Ocean stands out as an IT partner with a track record of excellence. With over a decade of experience, their team of highly trained professionals is equipped to handle diverse IT challenges. Money Ocean Information Technology’s dedication to customer satisfaction is evident in their client success stories. They hold industry awards, certifications, and specializations that underscore their expertise. Money Ocean Information Technology’s holistic approach ensures that your IT needs are not just met, but exceeded.</p>
                     </div>
                   </div>
                 </div>

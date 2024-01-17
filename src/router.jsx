@@ -3,8 +3,7 @@ import React from "react";
 import {BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import HomePage from "./pages/homepage";
 import Contact from "./pages/contact";
-// import Content from "./pages/AboutUs";
-import AboutUs from "./pages/Aboutus";
+import AboutUs from "./pages/Aboutus.jsx";
 // import ContainerOutsideExample from "./components/navbar";
 const AppRouter = () => {
   return (

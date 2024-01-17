@@ -1,4 +1,7 @@
+
+
 @import url('https://fonts.googleapis.com/css2?family=Cormorant&family=Playfair+Display&family=Raleway&display=swap');
+
 body {
   margin: 0;
   padding: 0;
@@ -16,10 +19,6 @@ margin-right: 10%;
 
 .paragraph-imgsec{
   max-width: 80%;
-}
-.heading-main-banner{
-  font-size: 3rem;
-  font-family: 'Raleway',sans-serif;
 }
 
 
@@ -75,7 +74,7 @@ margin-right: 10%;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 40vh;
+  height: auto;
   max-width:100%;
   margin-top: 5%;
 }
@@ -88,18 +87,17 @@ margin-right: 10%;
   max-width:100%;
 }
 .paragraph-additional-text{
-  max-width: 50%;
+  max-width: 40%;
 }
 .contactus-bulletpoint{
-  color:#bbb6b6;
-  font-size: 1rem;
+  color:#bbb6b6
 }
 /* YourComponent.css */
 
 /* YourComponent.css */
 
 .progress-main {
-  width: 90%;
+  max-width: 70%;
   margin-top:5%;
   margin-left: 2%;
 }
@@ -204,7 +202,7 @@ margin-right: 10%;
 
 
 .next_image {
-  min-width: 70%; /* Take full width on smaller screens */
+  min-width: 50%; /* Take full width on smaller screens */
   padding-right: 0; /* Remove right padding on smaller screens */
   height: auto;
   border: none;
@@ -218,8 +216,8 @@ margin-right: 10%;
   justify-content: center;
   align-items: center;
   margin-top: 5%;
-  width: 70%px; /* Set the desired width */
-  height: 200px;
+  width: 85%; /* Set the desired width */
+  height: 15rem;
   border: 1px solid #ddd; /* Add border for card */
   border-radius: 20px; /* Add rounded corners */
   overflow: hidden; /* Hide overflow content */
@@ -228,20 +226,25 @@ margin-right: 10%;
   font-family: "Red Hat Display", sans-serif;
   font-weight: 900;
   color: #1a1b1e;
-  margin-left: 22%;
-  margin-right: 22%;
+  margin-left: 5%;
+  margin-right: 5%;
   margin-bottom: 2%;
+  /* height: 300px; */
+  box-shadow: 0 0 30px rgba(255, 145, 0, 0.5);
+
 }
 
 .card-body {
   display: flex;
+  width: 85%;
+  justify-content: space-evenly;
   font-size: small;
   color: #facb89;
   text-shadow: #ffffff;
 }
 
 .card-body p{
-  font-size:xx-large;
+  font-size: 3rem;
   color: #ffffff;
 }
 
@@ -260,6 +263,10 @@ margin-right: 10%;
 }
 /* Additional text Mobile */
 @media screen and (max-width:600px) {
+.pioneering-text{
+  line-height: 2.25rem;
+}
+
   .additional-text
   {
     display: flex;
@@ -377,18 +384,8 @@ margin-right: 10%;
   box-shadow: none; /* Remove box-shadow on smaller screens */
 }
 
-.bg-overlay-main{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.bg-overlay-submain{
-  background: #f0f6ff;
-}
-
-
 .card-container {
+  background: #f0f6ff;
   overflow: hidden;
   display: flex;
   flex-wrap: wrap;
@@ -593,10 +590,6 @@ margin-right: 10%;
   padding: 20px;
   font-size: larger;
   text-align: justify;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
 }
 
 .last-section {
@@ -740,17 +733,23 @@ margin-right: 10%;
   }
 }
 
-
-
-.Mission{
-  max-width: 80%;
+.social-media-container{
+  max-width: 100%;
   display: flex;
+  justify-content: center;
   align-items: center;
-  justify-content: center ;
   flex-direction: column;
-  align-self: center;
 }
 
-.section2-2-small-title-div-mission{
-  justify-self: flex-start;
+.Mission {
+  max-width: 80%;
+}
+.digital{
+  max-width: 80%;
+}
+.mission-para{
+  /* font-family: 'Comorant',sans-serif; */
+  font-size: 16px;
+  color: #606060;
+  line-height: 1.875;
 }
