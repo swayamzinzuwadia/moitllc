@@ -1,0 +1,88 @@
+.footer3{
+    min-width: 100%;
+    background: #0042a1;
+    background-image: url('../assets/bg-shape3-home6.png');
+    display: flex;
+    flex-direction: column;
+}
+.footer-main{
+    min-width: 100%;
+    display: flex;
+    justify-content: center;
+    background: #0042a1;
+}
+
+.footer-sub-main{
+    min-width:100%;
+    min-height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background: #0042a1;
+    background-image: url('../assets/bg-shape3-home6.png');
+    color: white;
+    font-size: larger;
+}
+.Copyright{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10%;
+    font-size: large;
+    color: #fff;
+}
+.about-moit{
+    margin-top: 8%;
+    max-width:10%;
+    margin-left: 50px;
+    color:#fff;
+}
+.social-media-about{
+    margin-top: 10%;
+}
+.contact-info{
+    margin-top: 10%;
+}
+.address{
+    margin-top: 10%;
+}
+
+@media screen and (max-width: 900px){
+    
+    .footer-sub-main{
+      width: 100%;
+      min-height: 200px;
+      display: flex;
+      padding-top: 20px;
+      justify-content: space-between;
+      align-items:flex-start;
+      font-size: x-small;
+    }
+    .about-moit{
+      max-width: 30%;
+      margin-left: 2%;
+    }
+    .moit-para{
+      justify-content: flex-start;
+    }
+    .social-media-about{
+      padding-left: 30px;
+    }
+    .social-media li{
+      text-decoration: none;
+      font-style: none;
+    }
+    .contact-info{
+      padding-left: 70px;
+    }
+    .address{
+      padding-left: 15px;
+      padding-right: 80px;
+    }
+    .Copyright{
+        margin-top: 5%;
+        margin-left: 5%;
+        align-items: center;
+        font-size: smaller;
+    }
+    }
