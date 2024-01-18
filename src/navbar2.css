@@ -1,13 +1,22 @@
-.main-nav-2{
+.main-nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: transparent;
+    background-color: #fff;
     z-index: 999;
-    position: relative;
+    position: fixed;
+    top: 0;
+    width: 100%;
     height: 5rem;
     border-bottom: 1px solid white;
-}
+    opacity: 100;
+    transition: opacity 0.3s ease;
+  }
+  
+  .main-nav.scrolled {
+    opacity: 0;
+  }
+
 .logo-2{
     display: flex;
     justify-content: flex-start;
@@ -39,7 +48,7 @@
 }
 .menu-2 li {
     position: relative;
-    color: black;
+    color: rgb(0, 0, 0);
     font-weight: 700;
     font-size: 25px;
     overflow: hidden;
@@ -95,7 +104,7 @@
     margin-right: 25px;
     color: black;
 }
-@media (max-width: 1080px){
+@media (max-width: 1200px){
   .main-nav{
     height: 8rem;
     grid-template-columns: 2rem 2fr 3fr 2rem 2rem;
@@ -108,7 +117,7 @@
 }
 }
 
-@media(max-width: 998px){
+@media(max-width: 600px){
     .main-nav{
         height: 2rem;
         grid-template-columns: 2rem 2fr 3fr 2rem 2rem;
@@ -189,7 +198,7 @@
       
 }
 
-@media(max-width: 798px){
+@media(max-width: 600px){
     .main-nav {
         min-width: 100%;
         min-height: 6rem;
@@ -209,11 +218,13 @@
         align-items:flex-start;
         justify-content: left;
         flex-direction: row;
+        margin-top: 10%;
         transition: left 0.3s ease; /* Add a smooth transition effect */
       }
       
       .mobile-menu-link-2.open {
         left: 25%; /* Slide in to 30% of the screen width */
+        margin-top: 10%;
       }
       
       .mobile-menu-link-2 ul {
