@@ -1,5 +1,3 @@
-// Navbar.jsx
-
 import React, { useState, useEffect } from 'react';
 import { CiMenuBurger } from 'react-icons/ci';
 import './navbar2.css';
@@ -11,12 +9,20 @@ const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
+    let prevScrollY = 0;
+
     const handleScroll = () => {
-      if (window.scrollY > 50) {
+      const currentScrollY = window.scrollY;
+
+      if (currentScrollY > prevScrollY && currentScrollY > 50) {
+        // Scrolling down
         setScrolled(true);
       } else {
+        // Scrolling up or stopped scrolling
         setScrolled(false);
       }
+
+      prevScrollY = currentScrollY;
     };
 
     window.addEventListener('scroll', handleScroll);
@@ -26,10 +32,9 @@ const Navbar = () => {
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
-
   return (
-    <nav className={`main-nav-2 ${scrolled ? 'scrolled' : ''}`}>
-      <div className="logo-2">
+    <nav className={`main-nav ${scrolled ? 'scrolled' : ''}`}>
+      <div className="logo">
         <img
           src={logo}
           alt="Description"

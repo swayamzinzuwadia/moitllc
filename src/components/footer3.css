@@ -1,0 +1,110 @@
+.footer3{
+  min-width: 100%;
+  /* background: #0042a1; */
+  /* background-image: url('../assets/bg-shape3-home6.png'); */
+  display: flex;
+  flex-direction: column;
+}
+.footer3-main{
+  min-width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background: #0042a1;
+}
+
+.footer-sub-main{
+  background-image: url('../assets/bg-shape2-home6.jpg');
+  background-repeat: no-repeat;
+  min-width:100%;
+  min-height: 100%;
+  background: #0042a1;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  color: white;
+  font-size: larger;
+}
+.Copyright{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4%;
+  margin-bottom: 4%;
+  font-size: large;
+  /* background-color: #0042a1; */
+  color: #fff;
+}
+.about-moit{
+  margin-top: 8%;
+  max-width:15%;
+  margin-left: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color:#fff;
+}
+.social-media-about{
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.contact-info{
+  margin-top: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.address{
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (max-width: 600px){
+  
+  .footer-sub-main{
+    width: 100%;
+    min-height: 200px;
+    display: flex;
+    flex-direction: row;
+    padding-top: 20px;
+    justify-content: space-between;
+    align-items:flex-start;
+    font-size: x-small;
+  }
+  .about-moit{
+    max-width: 30%;
+    margin-left: 2%;
+  }
+  .moit-para{
+    justify-content: flex-start;
+  }
+  .social-media-about{
+    padding-left: 30px;
+  }
+  .social-media li{
+    text-decoration: none;
+    font-style: none;
+  }
+  .contact-info{
+    padding-left: 70px;
+  }
+  .address{
+    padding-left: 15px;
+    padding-right: 80px;
+  }
+  .Copyright{
+      margin-top: 5%;
+      margin-left: 5%;
+      align-items: center;
+      font-size: smaller;
+  }
+
+}

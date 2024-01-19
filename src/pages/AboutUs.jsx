@@ -7,7 +7,7 @@ import Navbar2 from '../components/navbar2';
 // import logo from "../assets/Moit-logo.png";
 import WhatsAppIcon from '../dhruv/whatsapp';
 import Onclick from '../dhruv/onclickform';
-import Footer2 from '../components/footer2';
+import Footer3 from '../components/footer3';
 
 const AboutUs = () => {
   function goToHome() {
@@ -23,9 +23,9 @@ const AboutUs = () => {
       <Navbar2/>
       <div className="content-head">
       <div className="heading-section">
-          <p classname="heading-main-banner main-font">About Us</p>
+          <p className="heading">Contact Us</p>
           <p className="home-link" onClick={goToHome}>
-            Home &gt; About Us
+            <a href='/' onClick={goToHome} className='home-text'>Home</a> &gt; Contact Us
           </p>
         </div>
       </div>
@@ -151,7 +151,7 @@ const AboutUs = () => {
                   <li>Our Mission</li>
                 </h6>
               </div>
-          <p className='leading-5 line-height: 1.25rem; '>
+          <p className='leading-5 Misssion-sub'>
             <h1 className='text-4xl font-bold '>Guiding Businesses Towards Digital Excellence</h1><br></br>
             <div className='text mission-para'>At the core of
             Money Ocean Information Technology Solutions lies an unwavering
@@ -175,7 +175,7 @@ const AboutUs = () => {
                 </h6>
               </div>
           <p className='digital-2' >
-            <h1 className='text-4xl font-bold leading-5 pioneering-text'><br></br>Pioneering a Digital Revolution</h1>
+            <h1 className='text-4xl font-bold leading-9 pioneering-text'><br></br>Pioneering a Digital Revolution</h1>
             <div className='mission-para mt-4'>
             Our vision extends far beyond conventional IT solutions. We are
             driven by the desire to mold a digital landscape where technology
@@ -197,9 +197,6 @@ const AboutUs = () => {
         </div>
       </div>
       </div>
-      <div className='footer2'>
-        <Footer2/>
-      </div>
       
       <div className='whatsapp'>
         <WhatsAppIcon/>
@@ -207,11 +204,13 @@ const AboutUs = () => {
       <div className='on-Click'>
          <Onclick/>
       </div>
-      <div className='copyright'>
-         <p>Copyright © 2023 Money Ocean Information Technology.LLC IT Solutions . All Rights Reserved.</p> 
-      </div>
+      
     </div>
     
+      <div className='footer2'>
+        <Footer3/>
+        
+      </div>
     </div>
   )
 }

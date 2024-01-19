@@ -3,7 +3,7 @@ import { React} from "react";
 import "./homepage.css";
 // import './tailwind.css';
 import Navbar from "../components/navbar";
-import Footer2 from "../components/footer2";
+import Footer3 from "../components/footer3";
 import image1 from "../assets/homepage-1.png";
 import section2_image from "../assets/home-section3.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -326,7 +326,7 @@ const HomePage = () => {
 
           <section id="footer">
             <div className="footer">
-              <Footer2/>
+              <Footer3/>
               {/* <p className="footer-text">Copyright © 2023 Money Ocean Information Technology.LLC IT Solutions . All Rights Reserved.</p>*/}
             </div>
           </section>

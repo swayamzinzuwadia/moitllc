@@ -33,6 +33,7 @@
 .section1-main3-div{
   display: flex;
   flex-direction: row;
+  margin-top: 2.5rem;
 }
 .typewriter{
   color: white;
@@ -46,7 +47,7 @@
 }
 
 .text-section1{
-  max-width: 30%;
+  max-width: 35%;
   display: flex;
   flex-direction: column;
   margin-top: 15vh;
@@ -55,8 +56,8 @@
   /* justify-content: center; */
 }
 .it-home-pic{
-  width: 80%;
-  /* height: 30rem; */
+  width: 85%;
+  height: 25rem;
   margin-right: 2rem;
 }
 .img-div{
@@ -153,8 +154,9 @@
     text-align: center;
   }
   .it-home-pic{
-    width: 1010vh;
-
+    width: 100%;
+    height: 22rem;
+    margin-right: 2rem;
   }
   .unlocking-text{
     color: white;

@@ -8,7 +8,7 @@ import './homepage.css'
 // import { Form } from 'react-router-dom'
 import ContactForm from '../components/ContactForm'
 import Navbar2 from '../components/navbar2';
-import Footer2 from '../components/footer2'
+import Footer3 from '../components/footer3';
 import MapComponent from '../components/Map'
 import { useNavigate } from 'react-router'
 
@@ -40,7 +40,7 @@ function Contact() {
         <div className="main-section mt-10 h-fit">
           <div className="submain-section1">
             <div className="blue-div-main h-fit">
-              <div className="blue-div w-full rounded-2xl h-full p-5 ">
+              <div className="blue-div w-full rounded-2xl p-5 ">
                 <div className="blue-div-submain">
                   <div className="section2-2-small-title-main-div">
                     <div className="dot-1">
@@ -125,7 +125,7 @@ function Contact() {
         <div className='footer-main-contact'>
             {/* <p className="footer-text">Copyright © 2023 Money Ocean Information Technology.LLC IT Solutions . All Rights Reserved.</p> */}
           <div className="footer-submain-contact">
-            <Footer2/>
+            <Footer3/>
 
           </div>
         

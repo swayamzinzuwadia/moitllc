@@ -50,7 +50,12 @@ const Footer2 = () => {
         <h2>Our Address</h2>
         <p>123 Main Street, Cityville, Country</p>
       </div>
+
+          <div className='copyright'>
+           <p>Copyright © 2023 Money Ocean Information Technology.LLC IT Solutions . All Rights Reserved.</p> 
+          </div>
     </div>
+     
   );
 }
 
