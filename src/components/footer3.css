@@ -52,14 +52,14 @@
     align-items: center;
     justify-content: center;
 }
-.contact-info{
+.contact-info-2{
   margin-top: 10%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-.address{
+.address-2{
     margin-top: 10%;
     display: flex;
     flex-direction: column;
@@ -76,29 +76,43 @@
     flex-direction: row;
     padding-top: 20px;
     justify-content: space-between;
-    align-items:flex-start;
+    align-items:center;
     font-size: x-small;
   }
   .about-moit{
     max-width: 30%;
     margin-left: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   .moit-para{
     justify-content: flex-start;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
-  .social-media-about{
-    padding-left: 30px;
+  .social-media-about-2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
-  .social-media li{
+  .social-media-about-2 li{
     text-decoration: none;
     font-style: none;
   }
-  .contact-info{
-    padding-left: 70px;
+  .contact-info-2{
+    /* padding-left: 70px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
-  .address{
-    padding-left: 15px;
-    padding-right: 80px;
+  .address-2{
+    /* padding-left: 15px; */
+    /* padding-right: 80px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   .Copyright{
       margin-top: 5%;

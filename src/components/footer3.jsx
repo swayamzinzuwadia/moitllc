@@ -1,6 +1,6 @@
 import React from 'react';
 import logo from '../assets/Moit-logo.png'
-import './footer3.css'
+import './footer3.css';
 const Footer3=()=>{
     return(
         <div className='footer3-main'>
@@ -40,7 +40,7 @@ const Footer3=()=>{
                 </div>
 
                 {/* Contact Information */}
-                <div className="contact-info">
+                <div className="contact-info-2">
                     <h2 className='font-bold'>Contact Us</h2>
                     <p>Phone: +1 123-456-7890</p>
                     <p>Email: info@taqniyah.com</p>
@@ -48,7 +48,7 @@ const Footer3=()=>{
                 </div>
 
                 {/* Address */}
-                <div className="address">
+                <div className="address-2">
                     <h2 className='font-bold'>Our Address</h2>
                     <p>123 Main Street, Cityville, Country</p>
                 </div>

@@ -30,10 +30,10 @@ function Contact() {
         <div className="navbar w-full">
               <Navbar2/>
           </div>
-        <div className="heading-section">
-          <p className="heading">Contact Us</p>
-          <p className="home-link" onClick={goToHome}>
-            <a href='/' onClick={goToHome} className='home-text'>Home</a> &gt; Contact Us
+        <div className="heading-section-2">
+          <p className="heading-2">Contact Us</p>
+          <p className="home-link-2" onClick={goToHome}>
+            <a href='/' onClick={goToHome} className='home-text-2'>Home</a> &gt; Contact Us
           </p>
         </div>
       <div className="contact-submain">
