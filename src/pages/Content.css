@@ -15,9 +15,6 @@ margin-right: 5%;
   background: #ffffff;
 }
 
-.paragraph-imgsec{
-  max-width: 80%;
-}
 
 .heading-section{
   background-image: url("../assets/bg-page-header.jpg");
@@ -52,14 +49,17 @@ margin-right: 5%;
   padding-right: 300px; */
   display: flex;
   align-items: center;
+  justify-content: center;
   color: rgb(0, 0, 0);
   font-size: 26px;
   border-radius: 10px;
+  height: 50rem;
+
 }
 
 .custom-image {
-  max-width: 100%; /* Take full width on smaller screens */
-  height: auto;
+  min-width: 35rem; /* Take full width on smaller screens */
+  height: 40rem;
   border: none;
   border-radius: 0;
   box-shadow: none; /* Remove box-shadow on smaller screens */
@@ -68,13 +68,25 @@ margin-right: 5%;
 }
 
 
+.paragraph-imgsec{
+  max-width: 50%;
+}
+
 @media screen and (max-width:600px) {
 
   .image-section{
     font-size: medium;
     min-width: 100%;
+    display: flex;
+    flex-direction: column;
   }
-
+  .heading-section{
+    margin-top: 4rem;
+  }
+  
+.paragraph-imgsec{
+  max-width: 80%;
+}
   
   .custom-image{
     max-width: 50%;

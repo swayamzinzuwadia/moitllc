@@ -8,10 +8,12 @@ import Navbar2 from '../components/navbar2';
 import WhatsAppIcon from '../dhruv/whatsapp';
 import Onclick from '../dhruv/onclickform';
 import Footer3 from '../components/footer3';
+import { useNavigate } from 'react-router-dom';
 
 const AboutUs = () => {
+  const navigate = useNavigate();
   function goToHome() {
-    console.log('Go to homeee')
+    navigate("/");
   }
   // const progress1 = 90
   // const progress2 = 80
@@ -19,11 +21,11 @@ const AboutUs = () => {
   return (
     <div className='imp'>
       
-    <div className="content-container ">
       <Navbar2/>
+    <div className="content-container ">
       <div className="content-head">
       <div className="heading-section">
-          <p className="heading">Contact Us</p>
+          <p className="heading">About Us</p>
           <p className="home-link" onClick={goToHome}>
             <a href='/' onClick={goToHome} className='home-text'>Home</a> &gt; Contact Us
           </p>
@@ -39,6 +41,12 @@ const AboutUs = () => {
           className="custom-image"
           />
         <p className='paragraph-imgsec'>
+              <div className="section2-2-small-title-div">
+                <h6 className=" contactus-bulletpoint">
+                <br></br><br></br>
+                  <li>WHO WE ARE</li>
+                </h6>
+              </div>
           <p className=' text-4xl font-bold'>Welcome to Money Ocean Information Technology Solutions</p> <br></br>
           <div className='welcome-subtext mission-para' >At
           Money Ocean Information Technology Solutions, we transcend technology

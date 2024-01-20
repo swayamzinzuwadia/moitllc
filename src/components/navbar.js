@@ -104,7 +104,7 @@ const Navbar = () => {
         />
       </div>
 
-      <div className={` ${showMediaIcons ? "mobile-menu-link-2 open" : "menu-2"}`}>
+      <div className={` ${showMediaIcons ? "mobile-menu-link-2 open" : "menu"}`}>
         <ul>
           <li>
             <Link to="/">Home</Link>
