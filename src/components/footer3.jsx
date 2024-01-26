@@ -18,7 +18,7 @@ const Footer3=()=>{
                     businesses for success in the modern digital landscape.
                     </p>
                 </div>
-                <div className="social-media-about">
+                <div className="social-media-about-2">
                     <p className='para font-bold'>Follow us on:</p>
                         <ul>
                             <li>
