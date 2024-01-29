@@ -62,7 +62,7 @@ import { Link, useNavigate } from 'react-router-dom';
 const Navbar = () => {
   const [showMediaIcons, setShowMediaIcons] = useState(false);
   const [scrolled, setScrolled] = useState(false);
-
+  const [atTop, setAtTop] = useState(true);
   useEffect(() => {
     let prevScrollY = 0;
 
@@ -76,7 +76,7 @@ const Navbar = () => {
         // Scrolling up or stopped scrolling
         setScrolled(false);
       }
-
+      setAtTop(currentScrollY === 0);
       prevScrollY = currentScrollY;
     };
 
@@ -87,6 +87,19 @@ const Navbar = () => {
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
+  // useEffect(() => {
+  //   const handleScroll = () => {
+  //     const isScrolled = window.scrollY > 50; // Adjust this threshold as needed
+  //     setScrolled(isScrolled);
+  //   };
+
+  //   window.addEventListener('scroll', handleScroll);
+
+  //   // Cleanup the event listener on component unmount
+  //   return () => {
+  //     window.removeEventListener('scroll', handleScroll);
+  //   };
+  // }, []);
 
   const navigate = useNavigate();
   function goHome(){
@@ -94,7 +107,7 @@ const Navbar = () => {
   }
 
   return (
-    <nav className={`main-nav-2 ${scrolled ? 'scrolled' : 'not-scrolled'}`}>
+    <nav className={`main-nav-2 ${scrolled ? 'scrolled' : 'not-scrolled'} ${atTop ? 'atTop' : 'not-atTop'}`}>
       <div className="logo" onClick={goHome}>
           
         <img

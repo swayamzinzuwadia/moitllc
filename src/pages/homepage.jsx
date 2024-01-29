@@ -264,8 +264,8 @@ const HomePage = () => {
                 <div className="section3-submain">
                   <div className="section3-headers">
                     <div className="section2-2-small-title-main-div">
-                      <div className="dot-1">
-                        <p className="dot-1-p">.</p>
+                      <div className="dot-1-2">
+                        <p className="dot-1-p-2">.</p>
                       </div>
                       <div className="section3-small-title-div">
                         <h6 className="section3-small-title">
@@ -302,8 +302,8 @@ const HomePage = () => {
                   </div>
                   <div className="section4-content-div">
                     <div className="section2-2-small-title-main-div">
-                      <div className="dot-1">
-                        <p className="dot-1-p">.</p>
+                      <div className="dot-1-3">
+                        <p className="dot-1-p-3">.</p>
                       </div>
                       <div className="section2-2-small-title-div">
                         <h6 className="section3-small-title">

@@ -7,6 +7,8 @@ import { Link } from 'react-router-dom';
 const Navbar = () => {
   const [showMediaIcons, setShowMediaIcons] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const [atTop, setAtTop] = useState(true);
+
 
   useEffect(() => {
     let prevScrollY = 0;
@@ -23,6 +25,8 @@ const Navbar = () => {
       }
 
       prevScrollY = currentScrollY;
+      setAtTop(currentScrollY === 0);
+
     };
 
     window.addEventListener('scroll', handleScroll);
@@ -33,7 +37,7 @@ const Navbar = () => {
     };
   }, []);
   return (
-    <nav className={`main-nav ${scrolled ? 'scrolled' : ''}`}>
+    <nav className={`main-nav ${scrolled ? 'scrolled' : ''} ${atTop ? 'atTop' : 'not-atTop'}`}>
       <div className="logo">
         <img
           src={logo}

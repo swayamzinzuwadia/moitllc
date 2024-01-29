@@ -14,16 +14,21 @@
   transition: background-color 0.3s ease;
 }
 .main-nav-2.scrolled {
-  opacity: 100;
+  opacity: 20;
   transform: translateY(-8rem);
   background-color: black;
+  transition: transform 0.3s ease-in-out;
 }
 .main-nav-2.not-scrolled {
   opacity: 100;
   /* transform: translateY(8rem); */
   background-color: transparent;
 }
-
+.main-nav-2.not-atTop {
+  opacity: 100;
+  background-color: #0042A1;
+  /* transform: translateY(8rem); */
+}
 
 .logo{
   display: flex;
@@ -112,6 +117,20 @@
 .ham-menu{
   margin-right: 25px;
   color: white;
+  background-color: white;
+  border-radius: 100%;
+  width: 1.4rem;
+  height: 1.3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ham-menu svg {
+  /* Set the color of the lines to black */
+  fill: #000;
+  display: flex;
+  justify-content: center;
+  align-self: center;
 }
 @media (max-width: 1200px){
   .main-nav{
@@ -214,7 +233,7 @@
     grid-template-columns: 1rem 2fr 2fr 1fr 1rem;
   }
   
-  .mobile-menu-link {
+  .mobile-menu-link-2 {
     position: fixed;
     top: 0;
     left: 100%; /* Start off-screen to the right */
@@ -231,9 +250,12 @@
     transition: left 0.3s ease; /* Add a smooth transition effect */
   }
   
-  .mobile-menu-link.open {
+  .mobile-menu-link-2.open {
     left: 25%; /* Slide in to 30% of the screen width */
-    margin-top: 10%;
+    /* margin-top: 10%; */
+    height: 100%;
+    transform: translateX(5%);
+    transition: transform 1s ease-in-out;
   }
   
   .mobile-menu-link ul {

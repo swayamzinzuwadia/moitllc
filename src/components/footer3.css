@@ -11,8 +11,11 @@
   justify-content: center;
   flex-direction: column;
   background: #0042a1;
+  flex-wrap: wrap;
 }
-
+.footer-shape{
+  background-color: #0042a1;
+}
 .footer-sub-main{
   background-image: url('../assets/bg-shape2-home6.jpg');
   background-repeat: no-repeat;
@@ -21,7 +24,7 @@
   background: #0042a1;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-evenly;
   color: white;
   font-size: larger;
 }
@@ -41,30 +44,31 @@
   margin-left: 50px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  align-items: flex-start;
+  justify-content: flex-start;
   color:#fff;
 }
-.social-media-about{
+.social-media-about-2{
     margin-top: 10%;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    align-items: flex-start;
+    justify-content: flex-start;
 }
 .contact-info-2{
   margin-top: 10%;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  align-items: flex-start;
+  justify-content: flex-start;
 }
 .address-2{
     margin-top: 10%;
+    max-width: 20rem;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    align-items: flex-start;
+    justify-content: flex-start;
 }
 
 @media screen and (max-width: 600px){
@@ -73,7 +77,7 @@
     width: 100%;
     min-height: 200px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     padding-top: 20px;
     justify-content: space-between;
     align-items:center;
