@@ -94,7 +94,7 @@ const Navbar = () => {
   }
 
   return (
-    <nav className={`main-nav-2 ${scrolled ? 'scrolled' : ''}`}>
+    <nav className={`main-nav-2 ${scrolled ? 'scrolled' : 'not-scrolled'}`}>
       <div className="logo" onClick={goHome}>
           
         <img

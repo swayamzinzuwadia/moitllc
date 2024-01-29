@@ -2,20 +2,28 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: transparent;
+  background-color: black;
   z-index: 999;
   position: fixed;
   top: 0;
   width: 100%;
-  height: 8rem;
+  height: 6.5rem;
   border-bottom: 1px solid white;
   opacity: 100;
-  transition: opacity 0.3s ease;
+  /* transition: opacity 0.3s ease; */
+  transition: background-color 0.3s ease;
+}
+.main-nav-2.scrolled {
+  opacity: 100;
+  transform: translateY(-8rem);
+  background-color: black;
+}
+.main-nav-2.not-scrolled {
+  opacity: 100;
+  /* transform: translateY(8rem); */
+  background-color: transparent;
 }
 
-.main-nav-2.scrolled {
-  opacity: 0;
-}
 
 .logo{
   display: flex;
