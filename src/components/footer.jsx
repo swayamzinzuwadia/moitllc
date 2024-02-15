@@ -41,7 +41,7 @@ function Footer() {
         {/* Contact Information */}
         <div className="contact-info">
           <h2>Contact Us</h2>
-          <p>Phone: +1 123-456-7890</p>
+          <p> <span className="footer-bold">Phone:</span> +1 123-456-7890</p>
           <p>Email: info@taqniyah.com</p>
           {/* Add more contact information as needed */}
         </div>

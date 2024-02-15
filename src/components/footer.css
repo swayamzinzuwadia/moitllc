@@ -26,3 +26,8 @@
 .para-div{
     max-width: 100%;
 }
+
+.footer-bold{
+    font-weight: 900;
+    color: cyan;
+}

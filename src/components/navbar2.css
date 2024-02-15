@@ -106,6 +106,10 @@
     margin-right: 25px;
     color: black;
 }
+
+.mobile-menu-link-2{
+    transform: translateX(-0.75%) ease 0.3s;
+}
 @media (max-width: 1200px){
   .main-nav{
     height: 8rem;
@@ -157,7 +161,7 @@
         grid-column: 2/5;
         align-items: center;
         padding-left: 3rem;
-        transition: all 2s linear;
+        transition: all 6s linear;
         transform-origin: top;
         box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
                 rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
@@ -212,24 +216,26 @@
       .mobile-menu-link-2 {
         position: fixed;
         top: 0;
-        left: 100%; /* Start off-screen to the right */
-        width:75%; /* Set a fixed width */
-        /* height: 100%; */
-        background-color: rgb(255, 255, 255); /* Set your desired background color */
+        left: 100%;
+        width: 300px;
+        height: 100%;
+        background-color: rgb(255, 255, 255);
         z-index: -1000;
         padding-left: 40px;
         display: flex;
-        align-items:flex-start;
+        align-items: flex-start;
         justify-content: left;
         flex-direction: row;
-        margin-top: 10%;
-        transition: left 1s ease-in-out; /* Add a smooth transition effect */
-    }
-    
-    .mobile-menu-link-2.open {
-        left: 25%; /* Slide in to 30% of the screen width */
-        margin-top: 10%;
-        transition: left 1s ease-in-out; /* Add a smooth transition effect */
+        transition: transform 0.5s ease, opacity 0.5s ease; /* Smooth transition */
+      }
+
+      .mobile-menu-link-2.open{
+        transition: transform 0.5s;
+      }
+      
+      .mobile-menu-link-2.open {
+        transform: translateX(-100%); /* Move the menu into view */
+        opacity: 1; /* Make the menu visible */
       }
       
       .mobile-menu-link-2 ul {

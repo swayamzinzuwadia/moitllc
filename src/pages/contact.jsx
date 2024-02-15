@@ -84,8 +84,7 @@ function Contact() {
                       <div className=" text-headers p-{0.3rem}">OUR ADDRESS:</div>
                       <div className="text-white ml-2">
                         <p>
-                          Unit 1202, Office 28, 12th Floor, Rolex Twin Towers
-                          (Commercial), Deira, Dubai
+                        407 , Business village Block B, Nr. Deira clock tower, Deira
                         </p>
                       </div>
                     </div>

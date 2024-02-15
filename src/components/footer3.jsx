@@ -1,6 +1,10 @@
 import React from 'react';
 import logo from '../assets/Moit-logo.png'
 import './footer3.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFacebook, faTwitter, faInstagram } from '@fortawesome/free-brands-svg-icons';
+
+
 const Footer3=()=>{
     return(
         <div className='footer3-main'>
@@ -29,18 +33,21 @@ const Footer3=()=>{
                 <div className="social-media-about-2">
                     <p className='para font-bold mt-6'>Follow us on:</p>
                         <ul className='mt-2'>
-                            <li>
-                                <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+                            <li className="list-items-footer3">
+                            <FontAwesomeIcon icon={faFacebook} />   
+                                <a className='footer3-a' href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
                                 Facebook
                                 </a>
                             </li>
-                            <li>
-                                <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
+                            <li className="list-items-footer3">
+                            <FontAwesomeIcon icon={faTwitter} />
+                                <a className='footer3-a' href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
                                 Twitter
                             </a>
                              </li>
-                             <li>
-                                <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+                             <li className="list-items-footer3">
+                             <FontAwesomeIcon icon={faInstagram} />
+                                <a className='footer3-a' href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
                                 Instagram
                                 </a>
                            </li>
@@ -50,8 +57,8 @@ const Footer3=()=>{
                 {/* Contact Information */}
                 <div className="contact-info-2">
                     <h2 className='font-bold mt-6'>Contact Us</h2>
-                    <p className='mt-2'>Phone: +1 123-456-7890</p>
-                    <p>Email: info@taqniyah.com</p>
+                    <p className='mt-2'><span className='footer3-bold'>Phone :</span> +1 123-456-7890</p>
+                    <p><span className='footer3-bold'>Email :</span> info@moitllc.com</p>
                     {/* Add more contact information as needed */}
                 </div>
 
