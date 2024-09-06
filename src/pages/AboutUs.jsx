@@ -15,9 +15,7 @@ const AboutUs = () => {
   function goToHome() {
     navigate("/");
   }
-  // const progress1 = 90
-  // const progress2 = 80
-  // const progress3 = 87
+
   return (
     <div className='imp'>
       
@@ -44,7 +42,7 @@ const AboutUs = () => {
               <div className="section2-2-small-title-div">
                 <h6 className=" contactus-bulletpoint">
                 <br></br><br></br>
-                  <li>WHO WE ARE</li>
+                  <li>Who We Are</li>
                 </h6>
               </div>
           <p className=' text-4xl font-bold'>Welcome to Money Ocean Information Technology Solutions</p> <br></br>

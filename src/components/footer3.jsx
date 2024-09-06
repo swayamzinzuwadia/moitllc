@@ -57,7 +57,7 @@ const Footer3=()=>{
                 {/* Contact Information */}
                 <div className="contact-info-2">
                     <h2 className='font-bold mt-6'>Contact Us</h2>
-                    <p className='mt-2'><span className='footer3-bold'>Phone :</span> +1 123-456-7890</p>
+                    <p className='mt-2'><span className='footer3-bold'>Phone :</span> +971 58-558-3143</p>
                     <p><span className='footer3-bold'>Email :</span> info@moitllc.com</p>
                     {/* Add more contact information as needed */}
                 </div>
