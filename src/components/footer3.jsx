@@ -39,15 +39,15 @@ const Footer3=()=>{
                                 Facebook
                                 </a>
                             </li>
-                            <li className="list-items-footer3">
+                            {/* <li className="list-items-footer3">
                             <FontAwesomeIcon icon={faTwitter} />
                                 <a className='footer3-a' href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
                                 Twitter
                             </a>
-                             </li>
+                             </li> */}
                              <li className="list-items-footer3">
                              <FontAwesomeIcon icon={faInstagram} />
-                                <a className='footer3-a' href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+                                <a className='footer3-a' href="https://www.instagram.com/moit_llc?igsh=cGswb3k3enl3bXVx" target="_blank" rel="noopener noreferrer">
                                 Instagram
                                 </a>
                            </li>
